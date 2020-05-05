@@ -53,4 +53,6 @@
 
 	<color name="dark_main_transparent">#754A4969</color>
 	<color name="transparent">#0000</color>
+
+	<color name="corporate_color">#9839FF</color>
 </resources>
