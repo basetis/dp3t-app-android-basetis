@@ -45,19 +45,6 @@ public class HeaderView extends ConstraintLayout {
 	static final long ICON_ANIM_DELAY = 200;
 	static final long INITIAL_DELAY = 500;
 
-	private static final int[] BACKGROUND_IMAGES =
-			new int[] { R.drawable.header_basel,
-					R.drawable.header_bern,
-					R.drawable.header_chur,
-					R.drawable.header_geneva,
-					R.drawable.header_lausanne,
-					R.drawable.header_locarno,
-					R.drawable.header_lugano,
-					R.drawable.header_luzern,
-					R.drawable.header_stgallen,
-					R.drawable.header_zurich };
-	private static Integer backgroundImageIndex = null;
-
 	private ImageView backgroundImage;
 	private ImageView icon;
 	private ImageView iconBackground;
@@ -94,12 +81,9 @@ public class HeaderView extends ConstraintLayout {
 		iconBackground.setScaleX(0);
 		iconBackground.setScaleY(0);
 
-		if (backgroundImageIndex == null) {
-			backgroundImageIndex = new Random(System.currentTimeMillis()).nextInt(BACKGROUND_IMAGES.length);
-		}
 		backgroundImage = headerContent.findViewById(R.id.main_header_bg_image);
 		backgroundImage.setForeground(new ColorDrawable(getResources().getColor(R.color.header_bg_off, null)));
-		backgroundImage.setImageResource(BACKGROUND_IMAGES[backgroundImageIndex]);
+		backgroundImage.setImageResource(R.drawable.pedrera);
 
 		circleView = headerContent.findViewById(R.id.main_header_anim_view);
 	}
