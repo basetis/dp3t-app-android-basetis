@@ -821,4 +821,14 @@ Répondez aux questions de l'auto-évaluation coronavirus de l'OFSP pour obtenir
     <!-- Accessibility Talk back information for android back button in toolbar -->
     <!-- Fuzzy -->
     <string name="android_accessibility_back_button">"Retour"</string>
+
+    <!--  Language  -->
+    <string name="language_title_screen">Language</string>
+    <!--  Langauges texts  -->
+    <string name="english" translatable="false">English</string>
+    <string name="catalan" translatable="false">Català</string>
+    <string name="german" translatable="false">Deutsch</string>
+    <string name="spanish" translatable="false">Español</string>
+    <string name="french" translatable="false">Français</string>
+    <string name="italian" translatable="false">Italiano</string>
 </resources>
