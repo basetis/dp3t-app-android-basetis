@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="en">
+        <item>en</item>
+        <item>@string/english</item>
+    </array>
+    <array name="ca">
+        <item>ca</item>
+        <item>@string/catalan</item>
+    </array>
+    <array name="de">
+        <item>de</item>
+        <item>@string/german</item>
+    </array>
+    <array name="es">
+        <item>es</item>
+        <item>@string/spanish</item>
+    </array>
+    <array name="fr">
+        <item>fr</item>
+        <item>@string/french</item>
+    </array>
+    <array name="it">
+        <item>it</item>
+        <item>@string/italian</item>
+    </array>
+</resources>

@@ -16,4 +16,10 @@
 		app:iconTint="@color/blue_main"
 		android:title="@string/menu_impressum"
 		app:showAsAction="always" />
+	<item
+		android:id="@+id/homescreen_menu_language"
+		android:icon="@drawable/ic_action_language"
+		app:iconTint="@color/blue_main"
+		android:title="@string/language_title_screen"
+		app:showAsAction="always" />
 </menu>
