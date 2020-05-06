@@ -24,7 +24,7 @@ android {
 		targetSdkVersion 29
 		versionCode 1000
 		versionName "1.0"
-		resConfigs "en", "fr", "de", "it"
+		resConfigs "en", "ca", "es"
 
 		buildConfigField "long", "BUILD_TIME", System.currentTimeMillis() + "L"
 	}

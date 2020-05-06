@@ -3,9 +3,6 @@
     <array name="languages">
         <item>@array/en</item>
         <item>@array/ca</item>
-        <item>@array/de</item>
         <item>@array/es</item>
-        <item>@array/fr</item>
-        <item>@array/it</item>
     </array>
 </resources>
