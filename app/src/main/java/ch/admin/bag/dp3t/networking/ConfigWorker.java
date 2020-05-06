@@ -31,6 +31,7 @@ import ch.admin.bag.dp3t.R;
 import ch.admin.bag.dp3t.networking.errors.ResponseError;
 import ch.admin.bag.dp3t.networking.models.ConfigResponseModel;
 import ch.admin.bag.dp3t.networking.models.InfoBoxModel;
+import ch.admin.bag.dp3t.networking.models.SdkConfigModel;
 import ch.admin.bag.dp3t.storage.SecureStorage;
 import ch.admin.bag.dp3t.util.NotificationUtil;
 
@@ -84,13 +85,23 @@ public class ConfigWorker extends Worker {
 	public void loadConfig() throws IOException, ResponseError, SignatureException {
 		Context context = getApplicationContext();
 
-		ConfigRepository configRepository = new ConfigRepository(context);
 
 		String appVersion = APP_VERSION_PREFIX_ANDROID + BuildConfig.VERSION_NAME;
 		String osVersion = OS_VERSION_PREFIX_ANDROID + Build.VERSION.SDK_INT;
 		String buildNumber = String.valueOf(BuildConfig.BUILD_TIME);
 
-		ConfigResponseModel config = configRepository.getConfig(appVersion, osVersion, buildNumber);
+		ConfigResponseModel config = new ConfigResponseModel();
+		SdkConfigModel sdkConfig = new SdkConfigModel();
+		sdkConfig.setBadAttenuationThreshold();
+		sdkConfig.setContactAttenuationThreshold();
+		sdkConfig.setEventThreshold();
+		sdkConfig.setNumberOfWindowsForExposure();
+
+		config.setForceTraceShutdown(false);
+		config.setForceUpdate(false);
+		config.setInfoBox(null);
+		config.setSdkConfig(sdkConfig);
+
 
 		SecureStorage secureStorage = SecureStorage.getInstance(context);
 		secureStorage.setDoForceUpdate(config.getDoForceUpdate());

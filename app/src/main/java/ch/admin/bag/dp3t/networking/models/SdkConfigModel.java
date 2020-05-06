@@ -33,4 +33,19 @@ public class SdkConfigModel {
 		return contactAttenuationThreshold;
 	}
 
+	public void setNumberOfWindowsForExposure(int numberOfWindowsForExposure) {
+		this.numberOfWindowsForExposure = numberOfWindowsForExposure;
+	}
+
+	public void setEventThreshold(float eventThreshold) {
+		this.eventThreshold = eventThreshold;
+	}
+
+	public void setBadAttenuationThreshold(float badAttenuationThreshold) {
+		this.badAttenuationThreshold = badAttenuationThreshold;
+	}
+
+	public void setContactAttenuationThreshold(float contactAttenuationThreshold) {
+		this.contactAttenuationThreshold = contactAttenuationThreshold;
+	}
 }

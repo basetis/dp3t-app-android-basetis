@@ -37,4 +37,23 @@ public class ConfigResponseModel {
 		return sdkConfig;
 	}
 
+	public void setForceUpdate(boolean forceUpdate) {
+		this.forceUpdate = forceUpdate;
+	}
+
+	public boolean isForceTraceShutdown() {
+		return forceTraceShutdown;
+	}
+
+	public void setForceTraceShutdown(boolean forceTraceShutdown) {
+		this.forceTraceShutdown = forceTraceShutdown;
+	}
+
+	public void setInfoBox(InfoBoxModelCollection infoBox) {
+		this.infoBox = infoBox;
+	}
+
+	public void setSdkConfig(SdkConfigModel sdkConfig) {
+		this.sdkConfig = sdkConfig;
+	}
 }

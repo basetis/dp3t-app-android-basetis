@@ -22,7 +22,6 @@ import androidx.core.app.NotificationCompat;
 import java.security.PublicKey;
 
 import ch.admin.bag.dp3t.networking.CertificatePinning;
-import ch.admin.bag.dp3t.networking.ConfigRepository;
 import ch.admin.bag.dp3t.networking.FakeWorker;
 import ch.admin.bag.dp3t.storage.SecureStorage;
 import ch.admin.bag.dp3t.util.NotificationUtil;
@@ -55,7 +54,6 @@ public class MainApplication extends Application {
 			DP3T.init(this, new ApplicationInfo("dp3t-app", BuildConfig.REPORT_URL, BuildConfig.BUCKET_URL), signaturePublicKey);
 
 			DP3T.setCertificatePinner(CertificatePinning.getCertificatePinner());
-			ConfigRepository.setCertificatePinner(CertificatePinning.getCertificatePinner());
 
 			FakeWorker.safeStartFakeWorker(this);
 		}
