@@ -92,16 +92,15 @@ public class ConfigWorker extends Worker {
 
 		ConfigResponseModel config = new ConfigResponseModel();
 		SdkConfigModel sdkConfig = new SdkConfigModel();
-		sdkConfig.setBadAttenuationThreshold();
-		sdkConfig.setContactAttenuationThreshold();
-		sdkConfig.setEventThreshold();
-		sdkConfig.setNumberOfWindowsForExposure();
+		sdkConfig.setBadAttenuationThreshold(BuildConfig.BAD_ATENUATION_THRESHOLD);
+		sdkConfig.setContactAttenuationThreshold(BuildConfig.CONTACT_ATENUATION_THRESHOLD);
+		sdkConfig.setEventThreshold(BuildConfig.EVENT_THRESHOLD);
+		sdkConfig.setNumberOfWindowsForExposure(BuildConfig.NUMBER_OF_WINDOWS_FOR_EXPOSURE);
 
-		config.setForceTraceShutdown(false);
-		config.setForceUpdate(false);
+		config.setForceTraceShutdown(BuildConfig.FORCE_TRACE_SHUTDOWN);
+		config.setForceUpdate(BuildConfig.FORCE_UPDATE_ENABLED);
 		config.setInfoBox(null);
 		config.setSdkConfig(sdkConfig);
-
 
 		SecureStorage secureStorage = SecureStorage.getInstance(context);
 		secureStorage.setDoForceUpdate(config.getDoForceUpdate());

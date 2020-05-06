@@ -33,6 +33,12 @@ android {
 	productFlavors {
 		dev {
 			buildConfigField 'boolean', 'IS_DEV', 'true'
+			buildConfigField 'float', 'BAD_ATENUATION_THRESHOLD', '64.0f'
+			buildConfigField 'float', 'CONTACT_ATENUATION_THRESHOLD', '54.0f'
+			buildConfigField 'float', 'EVENT_THRESHOLD', '0.8f'
+			buildConfigField 'int', 'NUMBER_OF_WINDOWS_FOR_EXPOSURE', '15'
+			buildConfigField 'boolean', 'FORCE_UPDATE_ENABLED', 'false'
+			buildConfigField 'boolean', 'FORCE_TRACE_SHUTDOWN', 'false'
 			buildConfigField 'String', 'AUTH_CODE_URL', '"https://codegen-service-d.bag.admin.ch/"'
 			buildConfigField 'String', 'CONFIG_URL', '"https://www.pt-d.bfs.admin.ch/"'
 			buildConfigField 'String', 'BUCKET_URL', '"https://www.pt-d.bfs.admin.ch/"'
@@ -42,6 +48,12 @@ android {
 		}
 		abnahme {
 			buildConfigField 'boolean', 'IS_DEV', 'false'
+			buildConfigField 'float', 'BAD_ATENUATION_THRESHOLD', '64.0f'
+			buildConfigField 'float', 'CONTACT_ATENUATION_THRESHOLD', '54.0f'
+			buildConfigField 'float', 'EVENT_THRESHOLD', '0.8f'
+			buildConfigField 'int', 'NUMBER_OF_WINDOWS_FOR_EXPOSURE', '15'
+			buildConfigField 'boolean', 'FORCE_UPDATE_ENABLED', 'false'
+			buildConfigField 'boolean', 'FORCE_TRACE_SHUTDOWN', 'false'
 			buildConfigField 'String', 'AUTH_CODE_URL', '"https://codegen-service-a.bag.admin.ch/"'
 			buildConfigField 'String', 'CONFIG_URL', '"https://www.pt-a.bfs.admin.ch/"'
 			buildConfigField 'String', 'BUCKET_URL', '"https://www.pt-a.bfs.admin.ch/"'
@@ -51,6 +63,12 @@ android {
 		}
 		prod {
 			buildConfigField 'boolean', 'IS_DEV', 'false'
+			buildConfigField 'float', 'BAD_ATENUATION_THRESHOLD', '64.0f'
+			buildConfigField 'float', 'CONTACT_ATENUATION_THRESHOLD', '54.0f'
+			buildConfigField 'float', 'EVENT_THRESHOLD', '0.8f'
+			buildConfigField 'int', 'NUMBER_OF_WINDOWS_FOR_EXPOSURE', '15'
+			buildConfigField 'boolean', 'FORCE_UPDATE_ENABLED', 'false'
+			buildConfigField 'boolean', 'FORCE_TRACE_SHUTDOWN', 'false'
 			buildConfigField 'String', 'AUTH_CODE_URL', '"https://codegen-service.bag.admin.ch/"'
 			buildConfigField 'String', 'CONFIG_URL', '"https://www.pt.bfs.admin.ch/"'
 			buildConfigField 'String', 'BUCKET_URL', '"https://www.pt.bfs.admin.ch/"'
