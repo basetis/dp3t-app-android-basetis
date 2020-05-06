@@ -19,7 +19,7 @@ android {
 	buildToolsVersion "29.0.3"
 
 	defaultConfig {
-		applicationId "ch.admin.bag.dp3t"
+		applicationId "com.basetis.dp3t"
 		minSdkVersion 23
 		targetSdkVersion 29
 		versionCode 1000
@@ -40,7 +40,6 @@ android {
 			buildConfigField 'boolean', 'FORCE_UPDATE_ENABLED', 'false'
 			buildConfigField 'boolean', 'FORCE_TRACE_SHUTDOWN', 'false'
 			buildConfigField 'String', 'AUTH_CODE_URL', '"https://codegen-service-d.bag.admin.ch/"'
-			buildConfigField 'String', 'CONFIG_URL', '"https://www.pt-d.bfs.admin.ch/"'
 			buildConfigField 'String', 'BUCKET_URL', '"https://www.pt-d.bfs.admin.ch/"'
 			buildConfigField 'String', 'REPORT_URL', '"https://www.pt1-d.bfs.admin.ch/"'
 			buildConfigField 'String', 'CONFIG_CERTIFICATE', "\"${project.backend_certs.dev.CONFIG_CERTIFICATE}\""
@@ -55,7 +54,6 @@ android {
 			buildConfigField 'boolean', 'FORCE_UPDATE_ENABLED', 'false'
 			buildConfigField 'boolean', 'FORCE_TRACE_SHUTDOWN', 'false'
 			buildConfigField 'String', 'AUTH_CODE_URL', '"https://codegen-service-a.bag.admin.ch/"'
-			buildConfigField 'String', 'CONFIG_URL', '"https://www.pt-a.bfs.admin.ch/"'
 			buildConfigField 'String', 'BUCKET_URL', '"https://www.pt-a.bfs.admin.ch/"'
 			buildConfigField 'String', 'REPORT_URL', '"https://www.pt1-a.bfs.admin.ch/"'
 			buildConfigField 'String', 'CONFIG_CERTIFICATE', "\"${project.backend_certs.abnahme.CONFIG_CERTIFICATE}\""
@@ -70,7 +68,6 @@ android {
 			buildConfigField 'boolean', 'FORCE_UPDATE_ENABLED', 'false'
 			buildConfigField 'boolean', 'FORCE_TRACE_SHUTDOWN', 'false'
 			buildConfigField 'String', 'AUTH_CODE_URL', '"https://codegen-service.bag.admin.ch/"'
-			buildConfigField 'String', 'CONFIG_URL', '"https://www.pt.bfs.admin.ch/"'
 			buildConfigField 'String', 'BUCKET_URL', '"https://www.pt.bfs.admin.ch/"'
 			buildConfigField 'String', 'REPORT_URL', '"https://www.pt1.bfs.admin.ch/"'
 			buildConfigField 'String', 'CONFIG_CERTIFICATE', "\"${project.backend_certs.prod.CONFIG_CERTIFICATE}\""

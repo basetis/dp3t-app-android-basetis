@@ -15,6 +15,7 @@ import androidx.work.*;
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
@@ -73,17 +74,10 @@ public class FakeWorker extends Worker {
 		return Result.success();
 	}
 
-	private void executeFakeRequest(Context context)
-			throws IOException, ResponseError, InvalidAuthResponseException, NoSuchAlgorithmException {
-		AuthCodeRepository authCodeRepository = new AuthCodeRepository(context);
-		AuthenticationCodeResponseModel accessTokenResponse =
-				authCodeRepository.getAccessTokenSync(new AuthenticationCodeRequestModel(FAKE_AUTH_CODE, 1));
-		String accessToken = accessTokenResponse.getAccessToken();
+	private void executeFakeRequest(Context context) throws IOException, ResponseError, InvalidAuthResponseException, NoSuchAlgorithmException {
 
-		Date onsetDate = JwtUtil.getOnsetDate(accessToken);
-		if (onsetDate == null) throw new InvalidAuthResponseException();
-
-		DP3T.sendFakeInfectedRequest(context, onsetDate, new ExposeeAuthMethodAuthorization(accessToken));
+		Date onsetDate = Calendar.getInstance().getTime();
+		DP3T.sendFakeInfectedRequest(context, onsetDate, new ExposeeAuthMethodAuthorization("accessToken"));
 	}
 
 	private class InvalidAuthResponseException extends Throwable { }
