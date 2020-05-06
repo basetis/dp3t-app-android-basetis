@@ -1,4 +1,4 @@
-# DP3T Android App Switzerland
+# DP3T Android App Basetis
 
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://github.com/DP-3T/dp3t-app-android-ch/blob/master/LICENSE)
 ![Android Build](https://github.com/DP-3T/dp3t-app-android-ch/workflows/Android%20Build/badge.svg)
@@ -11,7 +11,7 @@ DP-3T is a free-standing effort started at EPFL and ETHZ that produced this prot
 
 
 ## Introduction
-This is a COVID-19 tracing client using the [DP3T Android SDK](https://github.com/DP-3T/dp3t-sdk-android). It is based on the previously released demo app, but uses the newest version of the SDK. This project will be released as the official COVID-19 tracing solution for Switzerland, therefore UX, messages and flows are optimized for this specific case. Nevertheless, the source code should be a solid foundation to build a similar app for other countries and demostrate how the SDK can be used in a real app.
+This is a COVID-19 tracing client using the [DP3T Android SDK](https://github.com/DP-3T/dp3t-sdk-android). It is based on the previously released demo app, but uses the newest version of the SDK. This project will be released as the COVID-19 tracing solution for Basetis, therefore UX, messages and flows are optimized for this specific case. Nevertheless, the source code should be a solid foundation to build a similar app for other countries and demostrate how the SDK can be used in a real app.
 The app design, UX and implementation was done by [Ubique](https://www.ubique.ch?app=github).
 <p align="center">
 <img src="documentation/screenshots/screenshot1.png" width="20%">
