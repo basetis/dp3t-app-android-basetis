@@ -14,6 +14,7 @@
 		android:id="@+id/homescreen_menu_impressum"
 		android:icon="@drawable/ic_info_black_outlined"
 		app:iconTint="@color/blue_main"
+		android:visible="false"
 		android:title="@string/menu_impressum"
 		app:showAsAction="always" />
 	<item

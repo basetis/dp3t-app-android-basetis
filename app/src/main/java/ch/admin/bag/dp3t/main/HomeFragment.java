@@ -384,6 +384,7 @@ public class HomeFragment extends Fragment {
 
     private void setupSettings() {
         getParentFragmentManager().beginTransaction()
+                .setCustomAnimations(R.anim.slide_enter, R.anim.slide_exit, R.anim.slide_pop_enter, R.anim.slide_pop_exit)
                 .replace(R.id.main_fragment_container, LanguageFragment.newInstance())
                 .addToBackStack(LanguageFragment.class.getCanonicalName())
                 .commit();
