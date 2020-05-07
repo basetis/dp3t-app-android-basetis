@@ -348,16 +348,16 @@
     <string name="meldungen_detail_call_again_button">"Llama de nuevo"</string>
 
 
-    <string name="meldungen_detail_call_last_call">"Última llamada: (FECHA)"</string>
+    <string name="meldungen_detail_call_last_call">"Última llamada: {DATE}"</string>
 
 
-    <string name="app_subtitle">"Subtitular"</string>
+    <string name="app_subtitle">"A un paso por delante del virus"</string>
 
 
     <string name="onboarding_prinzip_heading">"El objetivo"</string>
 
 
-    <string name="onboarding_prinzip_title">"Mantenerse un paso por delante del virus"</string>
+    <string name="onboarding_prinzip_title">"A un paso por delante del virus"</string>
 
 
     <string name="onboarding_prinzip_text1">"Al usar la aplicación dp3t, todos podemos ayudar a contener la propagación del nuevo coronavirus".</string>
@@ -777,7 +777,7 @@
     <string name="meldungen_positive_tested_faq1_text">"Después de un texto positivo, el rastreo en la aplicación finaliza automáticamente".</string>
 
 
-    <string name="language_key">"Delaware"</string>
+    <string name="language_key">"es"</string>
 
 
     <string name="exposed_info_contact_hotline_name">"Coronavirus infoline"</string>
@@ -789,7 +789,7 @@
     <string name="date_in_days">"Quedan {COUNT} días"</string>
 
 
-    <string name="date_text_before_date">"a tiempo}"</string>
+    <string name="date_text_before_date">"el {DATE}"</string>
 
 
     <string name="android_accessibility_back_button">"Atrás"</string>
