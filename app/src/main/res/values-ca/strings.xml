@@ -348,16 +348,16 @@
     <string name="meldungen_detail_call_again_button">"Truca un altre cop"</string>
 
 
-    <string name="meldungen_detail_call_last_call">"Última trucada: (DATA)"</string>
+    <string name="meldungen_detail_call_last_call">"Última trucada: {DATE}"</string>
 
 
-    <string name="app_subtitle">"Subtítol"</string>
+    <string name="app_subtitle">"Un pas per davant del virus"</string>
 
 
     <string name="onboarding_prinzip_heading">"L\'objectiu"</string>
 
 
-    <string name="onboarding_prinzip_title">"Mantenir un pas per davant del virus"</string>
+    <string name="onboarding_prinzip_title">"Un pas per davant del virus"</string>
 
 
     <string name="onboarding_prinzip_text1">"Mitjançant l\'ús de l\'aplicació dp3t, tots podem ajudar a contenir la propagació del nou coronavirus."</string>
@@ -777,7 +777,7 @@
     <string name="meldungen_positive_tested_faq1_text">"Després d\'un text positiu, la traça a l\'aplicació s\'acaba automàticament."</string>
 
 
-    <string name="language_key">"de"</string>
+    <string name="language_key">"ca"</string>
 
 
     <string name="exposed_info_contact_hotline_name">"Coronavirus infoline"</string>
@@ -792,7 +792,7 @@
     <string name="date_text_before_date">"el {DATE}"</string>
 
 
-    <string name="android_accessibility_back_button">"Esquena"</string>
+    <string name="android_accessibility_back_button">"Enrere"</string>
 
 
     <string name="language_title_screen">Llenguatge</string>
