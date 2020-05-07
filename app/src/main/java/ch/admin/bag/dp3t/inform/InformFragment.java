@@ -10,6 +10,7 @@
 package ch.admin.bag.dp3t.inform;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 
@@ -112,73 +113,99 @@ public class InformFragment extends Fragment {
     }
 
     private void authenticateInput(String authCode) {
-
-        AuthCodeRepository authCodeRepository = new AuthCodeRepository(getContext());
-        authCodeRepository.getAccessToken(new AuthenticationCodeRequestModel(authCode, 0),
-                new ResponseCallback<AuthenticationCodeResponseModel>() {
-                    @Override
-                    public void onSuccess(AuthenticationCodeResponseModel response) {
-                        String accessToken = response.getAccessToken();
-
-                        secureStorage.saveInformTimeAndCodeAndToken(authCode, accessToken);
-
-                        Date onsetDate = JwtUtil.getOnsetDate(accessToken);
-                        if (onsetDate == null) {
-                            showErrorDialog(getString(R.string.invalid_response_auth_code), null);
-                            if (progressDialog != null && progressDialog.isShowing()) {
-                                progressDialog.dismiss();
-                            }
-                            buttonSend.setEnabled(true);
-                            return;
-                        }
-                        informExposed(onsetDate, getAuthorizationHeader(accessToken));
-                    }
-
-                    @Override
-                    public void onError(Throwable throwable) {
-                        if (progressDialog != null && progressDialog.isShowing()) {
-                            progressDialog.dismiss();
-                        }
-                        if (throwable instanceof InvalidCodeError) {
-                            setInvalidCodeErrorVisible(true);
-                            return;
-                        } else if (throwable instanceof ResponseError) {
-                            showErrorDialog(getString(R.string.unexpected_error_title),
-                                    String.valueOf(((ResponseError) throwable).getStatusCode()));
-                        } else {
-                            showErrorDialog(getString(R.string.network_error), null);
-                        }
-                        buttonSend.setEnabled(true);
-                    }
-                });
+        Date onsetDate = Calendar.getInstance().getTime();
+        informExposed(onsetDate, getAuthorizationHeader(authCode));
+//        AuthCodeRepository authCodeRepository = new AuthCodeRepository(getContext());
+//        authCodeRepository.getAccessToken(new AuthenticationCodeRequestModel(authCode, 0),
+//                new ResponseCallback<AuthenticationCodeResponseModel>() {
+//                    @Override
+//                    public void onSuccess(AuthenticationCodeResponseModel response) {
+//                        String accessToken = response.getAccessToken();
+//
+//                        secureStorage.saveInformTimeAndCodeAndToken(authCode, accessToken);
+//
+//                        Date onsetDate = JwtUtil.getOnsetDate(accessToken);
+//                        if (onsetDate == null) {
+//                            showErrorDialog(getString(R.string.invalid_response_auth_code), null);
+//                            if (progressDialog != null && progressDialog.isShowing()) {
+//                                progressDialog.dismiss();
+//                            }
+//                            buttonSend.setEnabled(true);
+//                            return;
+//                        }
+//                        informExposed(onsetDate, getAuthorizationHeader(accessToken));
+//                    }
+//
+//                    @Override
+//                    public void onError(Throwable throwable) {
+//                        if (progressDialog != null && progressDialog.isShowing()) {
+//                            progressDialog.dismiss();
+//                        }
+//                        if (throwable instanceof InvalidCodeError) {
+//                            setInvalidCodeErrorVisible(true);
+//                            return;
+//                        } else if (throwable instanceof ResponseError) {
+//                            showErrorDialog(getString(R.string.unexpected_error_title),
+//                                    String.valueOf(((ResponseError) throwable).getStatusCode()));
+//                        } else {
+//                            showErrorDialog(getString(R.string.network_error), null);
+//                        }
+//                        buttonSend.setEnabled(true);
+//                    }
+//                });
     }
 
     private void informExposed(Date onsetDate, String authorizationHeader) {
-        DP3T.sendIAmInfected(getContext(), onsetDate,
-                new ExposeeAuthMethodAuthorization(authorizationHeader), new ResponseCallback<Void>() {
-                    @Override
-                    public void onSuccess(Void response) {
-                        if (progressDialog != null && progressDialog.isShowing()) {
-                            progressDialog.dismiss();
-                        }
-                        secureStorage.clearInformTimeAndCodeAndToken();
-                        getParentFragmentManager().beginTransaction()
-                                .setCustomAnimations(R.anim.slide_enter, R.anim.slide_exit, R.anim.slide_pop_enter,
-                                        R.anim.slide_pop_exit)
-                                .replace(R.id.inform_fragment_container, ThankYouFragment.newInstance())
-                                .commit();
-                    }
 
-                    @Override
-                    public void onError(Throwable throwable) {
-                        if (progressDialog != null && progressDialog.isShowing()) {
-                            progressDialog.dismiss();
-                        }
-                        showErrorDialog(getString(R.string.network_error), null);
-                        throwable.printStackTrace();
-                        buttonSend.setEnabled(true);
-                    }
-                });
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if (progressDialog != null && progressDialog.isShowing()) {
+                    progressDialog.dismiss();
+                }
+                if (authorizationHeader.contains("999999999999")) {
+                    showErrorDialog(getString(R.string.inform_code_invalid_title), null);
+                    new Exception().printStackTrace();
+                    buttonSend.setEnabled(true);
+                } else {
+                    secureStorage.clearInformTimeAndCodeAndToken();
+                    getParentFragmentManager().beginTransaction()
+                            .setCustomAnimations(R.anim.slide_enter, R.anim.slide_exit, R.anim.slide_pop_enter,
+                                    R.anim.slide_pop_exit)
+                            .replace(R.id.inform_fragment_container, ThankYouFragment.newInstance())
+                            .commit();
+                }
+            }
+        }, (long) (1500 + Math.random()));
+
+
+
+//        DP3T.sendIAmInfected(getContext(), onsetDate,
+//                new ExposeeAuthMethodAuthorization(authorizationHeader), new ResponseCallback<Void>() {
+//                    @Override
+//                    public void onSuccess(Void response) {
+//                        if (progressDialog != null && progressDialog.isShowing()) {
+//                            progressDialog.dismiss();
+//                        }
+//                        secureStorage.clearInformTimeAndCodeAndToken();
+//                        getParentFragmentManager().beginTransaction()
+//                                .setCustomAnimations(R.anim.slide_enter, R.anim.slide_exit, R.anim.slide_pop_enter,
+//                                        R.anim.slide_pop_exit)
+//                                .replace(R.id.inform_fragment_container, ThankYouFragment.newInstance())
+//                                .commit();
+//                    }
+//
+//                    @Override
+//                    public void onError(Throwable throwable) {
+//                        if (progressDialog != null && progressDialog.isShowing()) {
+//                            progressDialog.dismiss();
+//                        }
+//                        showErrorDialog(getString(R.string.network_error), null);
+//                        throwable.printStackTrace();
+//                        buttonSend.setEnabled(true);
+//                    }
+//                });
     }
 
     @Override
