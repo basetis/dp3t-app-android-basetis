@@ -16,10 +16,15 @@ import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Build;
+import android.preference.PreferenceManager;
+import android.text.TextUtils;
+
 import androidx.core.app.NotificationCompat;
 
 import java.security.PublicKey;
+import java.util.Locale;
 
 import ch.admin.bag.dp3t.networking.CertificatePinning;
 import ch.admin.bag.dp3t.networking.FakeWorker;
@@ -53,10 +58,12 @@ public class MainApplication extends Application {
 			PublicKey signaturePublicKey = SignatureUtil.getPublicKeyFromBase64OrThrow(BuildConfig.BUCKET_PUBLIC_KEY);
 			DP3T.init(this, new ApplicationInfo("dp3t-app", BuildConfig.REPORT_URL, BuildConfig.BUCKET_URL), signaturePublicKey);
 
-			DP3T.setCertificatePinner(CertificatePinning.getCertificatePinner());
+			//DP3T.setCertificatePinner(CertificatePinning.getCertificatePinner());
 
 			FakeWorker.safeStartFakeWorker(this);
 		}
+
+		updateLanguage(this, getLanguage(this));
 	}
 
 	private BroadcastReceiver contactUpdateReceiver = new BroadcastReceiver() {
@@ -111,6 +118,22 @@ public class MainApplication extends Application {
 		secureStorage.setHotlineCallPending(true);
 		secureStorage.setReportsHeaderAnimationPending(true);
 		secureStorage.setLastShownContactId(contactId);
+	}
+
+	private void updateLanguage(Context ctx, String lang) {
+		PreferenceManager.getDefaultSharedPreferences(ctx).edit().putString("locale", lang).apply();
+		Configuration cfg = new Configuration();
+		if (!TextUtils.isEmpty(lang)) {
+			cfg.locale = new Locale(lang);
+		} else {
+			cfg.locale = Locale.getDefault();
+		}
+
+		ctx.getResources().updateConfiguration(cfg, null);
+	}
+
+	private String getLanguage(Context ctx) {
+		return PreferenceManager.getDefaultSharedPreferences(ctx).getString("locale", Locale.getDefault().getLanguage());
 	}
 
 }

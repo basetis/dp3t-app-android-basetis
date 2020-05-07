@@ -23,4 +23,7 @@ public class AuthenticationCodeRequestModel {
 		this.fake = fake;
 	}
 
+	public String getAuthorizationCode() {
+		return authorizationCode;
+	}
 }
