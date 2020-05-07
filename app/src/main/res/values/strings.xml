@@ -273,7 +273,7 @@ Thank you for helping to contain the spread of the coronavirus."</string>
     <string name="bluetooth_permission_error_text">"Enable the use of Bluetooth so that anonymous tracing works."</string>
 
     <!-- URL zum Corona Check -->
-    <string name="symptom_detail_corona_check_url">"https://canalsalut.gencat.cat/ca/salut-a-z/c/coronavirus-2019-ncov/ciutadania/que-es-coronavirus/simptomes-diagnostic-i-tractament/    "</string>
+    <string name="symptom_detail_corona_check_url">"https://canalsalut.gencat.cat/ca/salut-a-z/c/coronavirus-2019-ncov/ciutadania/que-es-coronavirus/simptomes-i-tractament/"</string>
     <string name="push_open_settings_button">"Change settings"</string>
 
     <!-- Meldungen Detail: Subtitel wenn keine Meldungen -->
@@ -713,7 +713,7 @@ Infoline Coronavirus
     <string name="meldungen_explanation_link_title">"Instructions on self-quarantine"</string>
 
     <!-- Meldungen: Meldung Weisse Box Link URL -->
-    <string name="meldungen_explanation_link_url">"https://canalsalut.gencat.cat/en/salut-a-z/c/coronavirus-2019-ncov/ciutadania/"</string>
+    <string name="meldungen_explanation_link_url">"https://canalsalut.gencat.cat/ca/salut-a-z/c/coronavirus-2019-ncov/ciutadania/confinament/"</string>
 
     <!-- Meldungen: Meldungen FAQ -->
     <string name="meldungen_meldungen_faq1_title">"Do I have to call?"</string>
@@ -743,7 +743,7 @@ Infoline Coronavirus
     <string name="no_meldungen_box_link">"This way, we protect ourselves"</string>
 
     <!-- Keine Meldungen Weisse Box Link URL -->
-    <string name="no_meldungen_box_url">"https://canalsalut.gencat.cat/en/salut-a-z/c/coronavirus-2019-ncov/ciutadania/"</string>
+    <string name="no_meldungen_box_url">"https://canalsalut.gencat.cat/ca/salut-a-z/c/coronavirus-2019-ncov/ciutadania/confinament/"</string>
 
     <!-- Informieren Detail: FAQ Titel -->
     <string name="inform_detail_faq1_title">"What is a Covidcode?"</string>
@@ -764,10 +764,10 @@ Infoline Coronavirus
     <string name="inform_send_endtracing_text">"Following a positive text, tracing is automatically ended."</string>
 
     <!-- Telefonnummer der Infoline -->
-    <string name="infoline_tel_number">"+41 58 387 77 78"</string>
+    <string name="infoline_tel_number">"061"</string>
 
     <!-- URL für Häufige Fragen Button -->
-    <string name="faq_button_url">"https://web.gencat.cat/en/coronavirus/preguntes-mes-frequents/"</string>
+    <string name="faq_button_url">"https://web.gencat.cat/ca/coronavirus/preguntes-mes-frequents/"</string>
 
     <!-- Informieren Flow: Titel erster Screen -->
     <string name="inform_code_intro_title">"Important information"</string>
