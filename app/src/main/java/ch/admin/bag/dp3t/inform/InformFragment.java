@@ -115,49 +115,9 @@ public class InformFragment extends Fragment {
     private void authenticateInput(String authCode) {
         Date onsetDate = Calendar.getInstance().getTime();
         informExposed(onsetDate, getAuthorizationHeader(authCode));
-//        AuthCodeRepository authCodeRepository = new AuthCodeRepository(getContext());
-//        authCodeRepository.getAccessToken(new AuthenticationCodeRequestModel(authCode, 0),
-//                new ResponseCallback<AuthenticationCodeResponseModel>() {
-//                    @Override
-//                    public void onSuccess(AuthenticationCodeResponseModel response) {
-//                        String accessToken = response.getAccessToken();
-//
-//                        secureStorage.saveInformTimeAndCodeAndToken(authCode, accessToken);
-//
-//                        Date onsetDate = JwtUtil.getOnsetDate(accessToken);
-//                        if (onsetDate == null) {
-//                            showErrorDialog(getString(R.string.invalid_response_auth_code), null);
-//                            if (progressDialog != null && progressDialog.isShowing()) {
-//                                progressDialog.dismiss();
-//                            }
-//                            buttonSend.setEnabled(true);
-//                            return;
-//                        }
-//                        informExposed(onsetDate, getAuthorizationHeader(accessToken));
-//                    }
-//
-//                    @Override
-//                    public void onError(Throwable throwable) {
-//                        if (progressDialog != null && progressDialog.isShowing()) {
-//                            progressDialog.dismiss();
-//                        }
-//                        if (throwable instanceof InvalidCodeError) {
-//                            setInvalidCodeErrorVisible(true);
-//                            return;
-//                        } else if (throwable instanceof ResponseError) {
-//                            showErrorDialog(getString(R.string.unexpected_error_title),
-//                                    String.valueOf(((ResponseError) throwable).getStatusCode()));
-//                        } else {
-//                            showErrorDialog(getString(R.string.network_error), null);
-//                        }
-//                        buttonSend.setEnabled(true);
-//                    }
-//                });
     }
 
     private void informExposed(Date onsetDate, String authorizationHeader) {
-
-
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -178,8 +138,6 @@ public class InformFragment extends Fragment {
                 }
             }
         }, (long) (1500 + Math.random()));
-
-
 
 //        DP3T.sendIAmInfected(getContext(), onsetDate,
 //                new ExposeeAuthMethodAuthorization(authorizationHeader), new ResponseCallback<Void>() {

@@ -55,7 +55,7 @@ android {
 			buildConfigField 'boolean', 'FORCE_TRACE_SHUTDOWN', 'false'
 			buildConfigField 'String', 'AUTH_CODE_URL', '"https://dpppt.test.basetis.com/v1/"'
 			buildConfigField 'String', 'BUCKET_URL', '"https://dpppt.test.basetis.com/"'
-			buildConfigField 'String', 'REPORT_URL', '"https://dpppt.test.basetis.com/v1/"'
+			buildConfigField 'String', 'REPORT_URL', '"https://dpppt.test.basetis.com/"'
 //			buildConfigField 'String', 'AUTH_CODE_URL', '"https://codegen-service-d.bag.admin.ch/"'
 //			buildConfigField 'String', 'BUCKET_URL', '"https://www.pt-d.bfs.admin.ch/"'
 //			buildConfigField 'String', 'REPORT_URL', '"https://www.pt1-d.bfs.admin.ch/"'
@@ -111,7 +111,7 @@ dependencies {
 	implementation fileTree(dir: 'libs', include: ['*.jar'])
 
 	def dp3t_sdk_version = '0.2.4-LOCAL_RELEASE'
-	devImplementation "org.dpppt:dp3t-sdk-android:$dp3t_sdk_version-calibration"
+	//devImplementation "org.dpppt:dp3t-sdk-android:$dp3t_sdk_version-calibration"
 	envTestImplementation "org.dpppt:dp3t-sdk-android:$dp3t_sdk_version"
 	prodImplementation "org.dpppt:dp3t-sdk-android:$dp3t_sdk_version"
 
