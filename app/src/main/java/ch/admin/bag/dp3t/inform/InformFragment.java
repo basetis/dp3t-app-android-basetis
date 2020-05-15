@@ -100,7 +100,7 @@ public class InformFragment extends Fragment {
 
             progressDialog = createProgressDialog();
             if (System.currentTimeMillis() - lastRequestTime < TIMEOUT_VALID_CODE && lastToken != null) {
-                Date onsetDate = new Date();//JwtUtil.getOnsetDate(lastToken);
+                Date onsetDate = JwtUtil.getOnsetDate(lastToken);
                 informExposed(onsetDate, getAuthorizationHeader(lastToken));
             } else {
                 authenticateInput(authCode);
@@ -119,19 +119,19 @@ public class InformFragment extends Fragment {
                     @Override
                     public void onSuccess(AuthenticationCodeResponseModel response) {
                         String accessToken = response.getAccessToken();
+                        if (accessToken != null) {
+                            secureStorage.saveInformTimeAndCodeAndToken(authCode, accessToken);
 
-                        secureStorage.saveInformTimeAndCodeAndToken(authCode, accessToken);
-
-                        Date onsetDate = new Date();// JwtUtil.getOnsetDate(accessToken);
-                        if (accessToken == null) {
-                            showErrorDialog(getString(R.string.invalid_response_auth_code), null);
-                            if (progressDialog != null && progressDialog.isShowing()) {
-                                progressDialog.dismiss();
+                            Date onsetDate = JwtUtil.getOnsetDate(accessToken);
+                            if (onsetDate == null) {
+                                informError();
+                                return;
                             }
-                            buttonSend.setEnabled(true);
+                            informExposed(onsetDate, getAuthorizationHeader(accessToken));
+                        }else{
+                            informError();
                             return;
                         }
-                        informExposed(onsetDate, getAuthorizationHeader(accessToken));
                     }
 
                     @Override
@@ -151,6 +151,14 @@ public class InformFragment extends Fragment {
                         buttonSend.setEnabled(true);
                     }
                 });
+    }
+
+    private void informError() {
+        showErrorDialog(getString(R.string.invalid_response_auth_code), null);
+        if (progressDialog != null && progressDialog.isShowing()) {
+            progressDialog.dismiss();
+        }
+        buttonSend.setEnabled(true);
     }
 
     private void informExposed(Date onsetDate, String authorizationHeader) {
