@@ -151,10 +151,6 @@ public class InformFragment extends Fragment {
                         buttonSend.setEnabled(true);
                     }
                 });
-
-
-//        Date onsetDate = Calendar.getInstance().getTime();
-//        informExposed(onsetDate, getAuthorizationHeader(authCode));
     }
 
     private void informExposed(Date onsetDate, String authorizationHeader) {
