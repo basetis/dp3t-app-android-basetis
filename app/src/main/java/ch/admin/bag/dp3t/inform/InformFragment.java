@@ -100,7 +100,7 @@ public class InformFragment extends Fragment {
 
             progressDialog = createProgressDialog();
             if (System.currentTimeMillis() - lastRequestTime < TIMEOUT_VALID_CODE && lastToken != null) {
-                Date onsetDate = JwtUtil.getOnsetDate(lastToken);
+                Date onsetDate = new Date();//JwtUtil.getOnsetDate(lastToken);
                 informExposed(onsetDate, getAuthorizationHeader(lastToken));
             } else {
                 authenticateInput(authCode);
@@ -113,8 +113,48 @@ public class InformFragment extends Fragment {
     }
 
     private void authenticateInput(String authCode) {
-        Date onsetDate = Calendar.getInstance().getTime();
-        informExposed(onsetDate, getAuthorizationHeader(authCode));
+        AuthCodeRepository authCodeRepository = new AuthCodeRepository(getContext());
+        authCodeRepository.getAccessToken(new AuthenticationCodeRequestModel(authCode, 0),
+                new ResponseCallback<AuthenticationCodeResponseModel>() {
+                    @Override
+                    public void onSuccess(AuthenticationCodeResponseModel response) {
+                        String accessToken = response.getAccessToken();
+
+                        secureStorage.saveInformTimeAndCodeAndToken(authCode, accessToken);
+
+                        Date onsetDate = new Date();// JwtUtil.getOnsetDate(accessToken);
+                        if (accessToken == null) {
+                            showErrorDialog(getString(R.string.invalid_response_auth_code), null);
+                            if (progressDialog != null && progressDialog.isShowing()) {
+                                progressDialog.dismiss();
+                            }
+                            buttonSend.setEnabled(true);
+                            return;
+                        }
+                        informExposed(onsetDate, getAuthorizationHeader(accessToken));
+                    }
+
+                    @Override
+                    public void onError(Throwable throwable) {
+                        if (progressDialog != null && progressDialog.isShowing()) {
+                            progressDialog.dismiss();
+                        }
+                        if (throwable instanceof InvalidCodeError) {
+                            setInvalidCodeErrorVisible(true);
+                            return;
+                        } else if (throwable instanceof ResponseError) {
+                            showErrorDialog(getString(R.string.unexpected_error_title),
+                                    String.valueOf(((ResponseError) throwable).getStatusCode()));
+                        } else {
+                            showErrorDialog(getString(R.string.network_error), null);
+                        }
+                        buttonSend.setEnabled(true);
+                    }
+                });
+
+
+//        Date onsetDate = Calendar.getInstance().getTime();
+//        informExposed(onsetDate, getAuthorizationHeader(authCode));
     }
 
     private void informExposed(Date onsetDate, String authorizationHeader) {

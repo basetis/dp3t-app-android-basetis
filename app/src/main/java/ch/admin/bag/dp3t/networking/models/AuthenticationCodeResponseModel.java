@@ -11,7 +11,9 @@ package ch.admin.bag.dp3t.networking.models;
 
 public class AuthenticationCodeResponseModel {
 
-	private String accessToken;
+	String accessToken;
+	String error;
+	int fake;
 
 	public String getAccessToken() {
 		return accessToken;
@@ -19,5 +21,21 @@ public class AuthenticationCodeResponseModel {
 
 	public void setAccessToken(String accessToken) {
 		this.accessToken = accessToken;
+	}
+
+	public String getError() {
+		return error;
+	}
+
+	public void setError(String error) {
+		this.error = error;
+	}
+
+	public int getFake() {
+		return fake;
+	}
+
+	public void setFake(int fake) {
+		this.fake = fake;
 	}
 }

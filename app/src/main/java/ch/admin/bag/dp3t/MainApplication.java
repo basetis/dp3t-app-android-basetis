@@ -58,7 +58,7 @@ public class MainApplication extends Application {
 			PublicKey signaturePublicKey = SignatureUtil.getPublicKeyFromBase64OrThrow(BuildConfig.BUCKET_PUBLIC_KEY);
 			DP3T.init(this, new ApplicationInfo("dp3t-app", BuildConfig.REPORT_URL, BuildConfig.BUCKET_URL), signaturePublicKey);
 
-			//DP3T.setCertificatePinner(CertificatePinning.getCertificatePinner());
+			DP3T.setCertificatePinner(CertificatePinning.getCertificatePinner());
 
 			FakeWorker.safeStartFakeWorker(this);
 		}

@@ -68,14 +68,11 @@ public class AuthCodeRepository {
 
     public void getAccessToken(@NonNull AuthenticationCodeRequestModel authenticationCode,
                                @NonNull ResponseCallback<AuthenticationCodeResponseModel> callbackListener) {
-        authCodeService.getAccessToken(authenticationCode.getAuthorizationCode()).enqueue(new Callback<Response<String>>() {
+        authCodeService.getAccessToken(authenticationCode.getAuthorizationCode(), "0").enqueue(new Callback<AuthenticationCodeResponseModel>() {
             @Override
-            public void onResponse(Call<Response<String>> call, Response<Response<String>> response) {
-                if (response.isSuccessful()) {
-
-                    AuthenticationCodeResponseModel authenticationCodeResponseModel = new AuthenticationCodeResponseModel();
-                    authenticationCodeResponseModel.setAccessToken(response.headers().get("X-OTP"));
-                    callbackListener.onSuccess(authenticationCodeResponseModel);
+            public void onResponse(Call<AuthenticationCodeResponseModel> call, Response<AuthenticationCodeResponseModel> response) {
+                if (response.isSuccessful() && response.body() != null) {
+                    callbackListener.onSuccess(response.body());
                 } else {
                     if (response.code() == 404) {
                         onFailure(call, new InvalidCodeError());
@@ -86,20 +83,42 @@ public class AuthCodeRepository {
             }
 
             @Override
-            public void onFailure(Call<Response<String>> call, Throwable t) {
+            public void onFailure(Call<AuthenticationCodeResponseModel> call, Throwable t) {
                 callbackListener.onError(t);
             }
         });
+
+
+//    new Callback<Response<String>>() {
+//            @Override
+//            public void onResponse(Call<Response<String>> call, Response<Response<String>> response) {
+//                if (response.isSuccessful()) {
+//
+//                    AuthenticationCodeResponseModel authenticationCodeResponseModel = new AuthenticationCodeResponseModel();
+//                    authenticationCodeResponseModel.setAccessToken(response.headers().get("X-OTP"));
+//                    callbackListener.onSuccess(authenticationCodeResponseModel);
+//                } else {
+//                    if (response.code() == 404) {
+//                        onFailure(call, new InvalidCodeError());
+//                    } else {
+//                        onFailure(call, new ResponseError(response.raw()));
+//                    }
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<Response<String>> call, Throwable t) {
+//                callbackListener.onError(t);
+//            }
+//        });
     }
 
     public AuthenticationCodeResponseModel getAccessTokenSync(@NonNull AuthenticationCodeRequestModel authenticationCode)
             throws IOException, ResponseError {
-        Response response = authCodeService.getAccessToken(authenticationCode.getAuthorizationCode()).execute();
+        Response response = authCodeService.getAccessToken(authenticationCode.getAuthorizationCode(), "0").execute();
         if (!response.isSuccessful()) throw new ResponseError(response.raw());
-        AuthenticationCodeResponseModel authenticationCodeResponseModel = new AuthenticationCodeResponseModel();
-        authenticationCodeResponseModel.setAccessToken(response.headers().get("X-OTP"));
 
-        return authenticationCodeResponseModel;
+        return (AuthenticationCodeResponseModel) response.body();
     }
 
 }
