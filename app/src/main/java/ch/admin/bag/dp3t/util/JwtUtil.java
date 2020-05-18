@@ -24,6 +24,7 @@ import ch.admin.bag.dp3t.inform.models.AccessTokenModel;
 public class JwtUtil {
 
 	public static Date getOnsetDate(String accessToken) {
+
 		String[] tokenParts = accessToken.split("\\.");
 		if (tokenParts.length < 3) {
 			return null;

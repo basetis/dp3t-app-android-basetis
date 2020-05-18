@@ -39,9 +39,9 @@ android {
 			buildConfigField 'int', 'NUMBER_OF_WINDOWS_FOR_EXPOSURE', '15'
 			buildConfigField 'boolean', 'FORCE_UPDATE_ENABLED', 'false'
 			buildConfigField 'boolean', 'FORCE_TRACE_SHUTDOWN', 'false'
-			buildConfigField 'String', 'AUTH_CODE_URL', '"https://codegen-service-d.bag.admin.ch/"'
-			buildConfigField 'String', 'BUCKET_URL', '"https://www.pt-d.bfs.admin.ch/"'
-			buildConfigField 'String', 'REPORT_URL', '"https://www.pt1-d.bfs.admin.ch/"'
+			buildConfigField 'String', 'AUTH_CODE_URL', '"https://dpppt.test.basetis.com/"'
+			buildConfigField 'String', 'BUCKET_URL', '"https://dpppt.test.basetis.com/"'
+			buildConfigField 'String', 'REPORT_URL', '"https://dpppt.test.basetis.com/"'
 			buildConfigField 'String', 'CONFIG_CERTIFICATE', "\"${project.backend_certs.dev.CONFIG_CERTIFICATE}\""
 			buildConfigField 'String', 'BUCKET_PUBLIC_KEY', "\"${project.backend_certs.dev.BUCKET_PUBLIC_KEY}\""
 		}
@@ -53,7 +53,7 @@ android {
 			buildConfigField 'int', 'NUMBER_OF_WINDOWS_FOR_EXPOSURE', '15'
 			buildConfigField 'boolean', 'FORCE_UPDATE_ENABLED', 'false'
 			buildConfigField 'boolean', 'FORCE_TRACE_SHUTDOWN', 'false'
-			buildConfigField 'String', 'AUTH_CODE_URL', '"https://dpppt.test.basetis.com/v1/"'
+			buildConfigField 'String', 'AUTH_CODE_URL', '"https://dpppt.test.basetis.com/"'
 			buildConfigField 'String', 'BUCKET_URL', '"https://dpppt.test.basetis.com/"'
 			buildConfigField 'String', 'REPORT_URL', '"https://dpppt.test.basetis.com/"'
 //			buildConfigField 'String', 'AUTH_CODE_URL', '"https://codegen-service-d.bag.admin.ch/"'
@@ -110,8 +110,8 @@ android {
 dependencies {
 	implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-	def dp3t_sdk_version = '0.2.4-LOCAL_RELEASE'
-	//devImplementation "org.dpppt:dp3t-sdk-android:$dp3t_sdk_version-calibration"
+	def dp3t_sdk_version = '0.2.4-D3'
+	devImplementation "org.dpppt:dp3t-sdk-android:$dp3t_sdk_version-calibration"
 	envTestImplementation "org.dpppt:dp3t-sdk-android:$dp3t_sdk_version"
 	prodImplementation "org.dpppt:dp3t-sdk-android:$dp3t_sdk_version"
 
@@ -133,5 +133,6 @@ dependencies {
 	implementation 'com.squareup.retrofit2:retrofit:2.6.2'
 	implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
 	implementation("com.squareup.okhttp3:logging-interceptor:4.6.0")
+	debugImplementation 'com.amitshekhar.android:debug-db:1.0.6'
 
 }
