@@ -67,8 +67,9 @@ public class AuthCodeRepository {
     }
 
     public void getAccessToken(@NonNull AuthenticationCodeRequestModel authenticationCode,
+                               @NonNull Integer method,
                                @NonNull ResponseCallback<AuthenticationCodeResponseModel> callbackListener) {
-        authCodeService.getAccessToken(authenticationCode.getAuthorizationCode(), "0").enqueue(new Callback<AuthenticationCodeResponseModel>() {
+        authCodeService.getAccessToken(authenticationCode.getAuthorizationCode(), "0", method).enqueue(new Callback<AuthenticationCodeResponseModel>() {
             @Override
             public void onResponse(Call<AuthenticationCodeResponseModel> call, Response<AuthenticationCodeResponseModel> response) {
                 if (response.isSuccessful() && response.body() != null) {
@@ -87,35 +88,11 @@ public class AuthCodeRepository {
                 callbackListener.onError(t);
             }
         });
-
-
-//    new Callback<Response<String>>() {
-//            @Override
-//            public void onResponse(Call<Response<String>> call, Response<Response<String>> response) {
-//                if (response.isSuccessful()) {
-//
-//                    AuthenticationCodeResponseModel authenticationCodeResponseModel = new AuthenticationCodeResponseModel();
-//                    authenticationCodeResponseModel.setAccessToken(response.headers().get("X-OTP"));
-//                    callbackListener.onSuccess(authenticationCodeResponseModel);
-//                } else {
-//                    if (response.code() == 404) {
-//                        onFailure(call, new InvalidCodeError());
-//                    } else {
-//                        onFailure(call, new ResponseError(response.raw()));
-//                    }
-//                }
-//            }
-//
-//            @Override
-//            public void onFailure(Call<Response<String>> call, Throwable t) {
-//                callbackListener.onError(t);
-//            }
-//        });
     }
 
-    public AuthenticationCodeResponseModel getAccessTokenSync(@NonNull AuthenticationCodeRequestModel authenticationCode)
+    public AuthenticationCodeResponseModel getAccessTokenSync(@NonNull AuthenticationCodeRequestModel authenticationCode, Integer method)
             throws IOException, ResponseError {
-        Response response = authCodeService.getAccessToken(authenticationCode.getAuthorizationCode(), "0").execute();
+        Response response = authCodeService.getAccessToken(authenticationCode.getAuthorizationCode(), "0", method).execute();
         if (!response.isSuccessful()) throw new ResponseError(response.raw());
 
         return (AuthenticationCodeResponseModel) response.body();

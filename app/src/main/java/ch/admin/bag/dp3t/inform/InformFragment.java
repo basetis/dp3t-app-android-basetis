@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -114,7 +115,7 @@ public class InformFragment extends Fragment {
 
     private void authenticateInput(String authCode) {
         AuthCodeRepository authCodeRepository = new AuthCodeRepository(getContext());
-        authCodeRepository.getAccessToken(new AuthenticationCodeRequestModel(authCode, 0),
+        authCodeRepository.getAccessToken(new AuthenticationCodeRequestModel(authCode, 0), getResources().getInteger(R.integer.auth_method),
                 new ResponseCallback<AuthenticationCodeResponseModel>() {
                     @Override
                     public void onSuccess(AuthenticationCodeResponseModel response) {
