@@ -68,10 +68,10 @@ android {
 			buildConfigField 'boolean', 'FORCE_UPDATE_ENABLED', 'false'
 			buildConfigField 'boolean', 'FORCE_TRACE_SHUTDOWN', 'false'
 			buildConfigField 'String', 'AUTH_CODE_URL', '"https://dpppt.test.basetis.com/"'
-			buildConfigField 'String', 'BUCKET_URL', '"https://dpppt.test.basetis.com/"'
-			buildConfigField 'String', 'REPORT_URL', '"https://dpppt.test.basetis.com/"'
-			buildConfigField 'String', 'CONFIG_CERTIFICATE', "\"${project.backend_certs.envTest.CONFIG_CERTIFICATE}\""
-			buildConfigField 'String', 'BUCKET_PUBLIC_KEY', "\"${project.backend_certs.envTest.BUCKET_PUBLIC_KEY}\""
+			buildConfigField 'String', 'BUCKET_URL', '"https://dpppt.basetis.com/"'
+			buildConfigField 'String', 'REPORT_URL', '"https://dpppt.basetis.com/"'
+			buildConfigField 'String', 'CONFIG_CERTIFICATE', "\"${project.backend_certs.basetis.CONFIG_CERTIFICATE}\""
+			buildConfigField 'String', 'BUCKET_PUBLIC_KEY', "\"${project.backend_certs.basetis.BUCKET_PUBLIC_KEY}\""
 		}
 		prod {
 			buildConfigField 'boolean', 'IS_DEV', 'false'
