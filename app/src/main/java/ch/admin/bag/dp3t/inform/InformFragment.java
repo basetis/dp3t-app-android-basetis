@@ -115,7 +115,7 @@ public class InformFragment extends Fragment {
 
     private void authenticateInput(String authCode) {
         AuthCodeRepository authCodeRepository = new AuthCodeRepository(getContext());
-        authCodeRepository.getAccessToken(new AuthenticationCodeRequestModel(authCode, 0), getResources().getInteger(R.integer.auth_method),
+        authCodeRepository.getAccessToken(new AuthenticationCodeRequestModel(authCode, 0), getString(R.string.auth_method),
                 new ResponseCallback<AuthenticationCodeResponseModel>() {
                     @Override
                     public void onSuccess(AuthenticationCodeResponseModel response) {

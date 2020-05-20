@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer translatable="false" name="auth_method">@integer/auth_method_otp</integer>
+    <string translatable="false" name="auth_method">@string/auth_method_otp</string>
 </resources>

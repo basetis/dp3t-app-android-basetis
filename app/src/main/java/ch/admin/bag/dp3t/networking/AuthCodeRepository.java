@@ -67,7 +67,7 @@ public class AuthCodeRepository {
     }
 
     public void getAccessToken(@NonNull AuthenticationCodeRequestModel authenticationCode,
-                               @NonNull Integer method,
+                               @NonNull String method,
                                @NonNull ResponseCallback<AuthenticationCodeResponseModel> callbackListener) {
         authCodeService.getAccessToken(authenticationCode.getAuthorizationCode(), "0", method).enqueue(new Callback<AuthenticationCodeResponseModel>() {
             @Override
@@ -90,7 +90,7 @@ public class AuthCodeRepository {
         });
     }
 
-    public AuthenticationCodeResponseModel getAccessTokenSync(@NonNull AuthenticationCodeRequestModel authenticationCode, Integer method)
+    public AuthenticationCodeResponseModel getAccessTokenSync(@NonNull AuthenticationCodeRequestModel authenticationCode, String method)
             throws IOException, ResponseError {
         Response response = authCodeService.getAccessToken(authenticationCode.getAuthorizationCode(), "0", method).execute();
         if (!response.isSuccessful()) throw new ResponseError(response.raw());

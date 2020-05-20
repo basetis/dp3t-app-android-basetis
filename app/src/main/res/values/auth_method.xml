@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer translatable="false" name="auth_method">@integer/auth_method_otp</integer>
-    <integer translatable="false" name="auth_method_all">0</integer>
-    <integer translatable="false" name="auth_method_otp">1</integer>
-    <integer translatable="false" name="auth_method_vottun">2</integer>
+    <string translatable="false" name="auth_method">@string/auth_method_otp</string>
+    <string translatable="false" name="auth_method_all">ALL</string>
+    <string translatable="false" name="auth_method_otp">OTP</string>
+    <string translatable="false" name="auth_method_vottun">VOTTUN</string>
 </resources>
