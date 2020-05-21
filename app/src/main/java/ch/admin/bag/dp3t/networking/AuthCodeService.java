@@ -27,7 +27,7 @@ public interface AuthCodeService {
 			"accept: */*",
 			"content-type: application/json"
 	})
-	@GET("/v1/onset/{otpValue}/{fake}/{method}}")
+	@GET("/v1/onset/{otpValue}/{fake}/{method}")
 	Call<AuthenticationCodeResponseModel> getAccessToken(@Path("otpValue") String otp, @Path("fake") String fake, @Path("method") String method);
 
 }
