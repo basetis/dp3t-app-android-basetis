@@ -25,7 +25,7 @@
 			android:layout_gravity="left"
 			android:adjustViewBounds="true"
 			android:scaleType="fitCenter"
-			android:src="@drawable/ic_basetis_logo" />
+			android:src="@drawable/ic_generic_company" />
 
 		<TextView
 			style="@style/NextStep.Text.Bold"
