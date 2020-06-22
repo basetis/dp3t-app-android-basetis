@@ -794,6 +794,8 @@
 
     <string name="android_accessibility_back_button">"Enrere"</string>
 
+    <string name="home_refresh_button">Sincronitzar</string>
+
 
     <string name="language_title_screen">Llenguatge</string>
 

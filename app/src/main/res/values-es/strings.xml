@@ -795,6 +795,9 @@
     <string name="android_accessibility_back_button">"Atrás"</string>
 
 
+    <string name="home_refresh_button">Sincronizar</string>
+
+
     <string name="language_title_screen">Idioma</string>
 
     <string name="english" translatable="false">English</string>
