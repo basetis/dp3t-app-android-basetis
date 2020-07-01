@@ -129,11 +129,11 @@ public class TracingViewModel extends AndroidViewModel {
 		return tracingStatusInterface;
 	}
 
-	public void sync() {
+	public void sync(boolean forceSync) {
 		new Thread() {
 			@Override
 			public void run() {
-				DP3T.sync(getApplication());
+				DP3T.sync(getApplication(), forceSync);
 			}
 		}.start();
 	}

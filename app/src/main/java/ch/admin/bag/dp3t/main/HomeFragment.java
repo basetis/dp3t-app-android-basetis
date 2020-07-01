@@ -22,6 +22,7 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.TypedValue;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -74,6 +75,7 @@ public class HomeFragment extends Fragment {
     private View cardSymptoms;
     private View cardTest;
     private View loadingView;
+    private Button refreshButton;
 
     private SecureStorage secureStorage;
 
@@ -136,6 +138,7 @@ public class HomeFragment extends Fragment {
         cardSymptomsFrame = view.findViewById(R.id.frame_card_symptoms);
         cardTest = view.findViewById(R.id.card_what_to_do_test);
         cardTestFrame = view.findViewById(R.id.frame_card_test);
+        refreshButton = view.findViewById(R.id.home_refresh_button);
         loadingView = view.findViewById(R.id.loading_view);
 
         setupHeader();
@@ -145,6 +148,13 @@ public class HomeFragment extends Fragment {
         setupWhatToDo();
         setupDebugButton();
         setupScrollBehavior();
+        setupRefresh();
+    }
+
+    private void setupRefresh() {
+        refreshButton.setOnClickListener(view -> {
+            tracingViewModel.sync(true);
+        });
     }
 
     @Override
@@ -287,7 +297,7 @@ public class HomeFragment extends Fragment {
                                 @Override
                                 public void onAnimationEnd(Animator animation) {
                                     loadingView.setVisibility(VISIBLE);
-                                    tracingViewModel.sync();
+                                    tracingViewModel.sync(false);
                                 }
                             });
                 });

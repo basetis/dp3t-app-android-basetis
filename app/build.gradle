@@ -67,7 +67,7 @@ android {
 			buildConfigField 'int', 'NUMBER_OF_WINDOWS_FOR_EXPOSURE', '15'
 			buildConfigField 'boolean', 'FORCE_UPDATE_ENABLED', 'false'
 			buildConfigField 'boolean', 'FORCE_TRACE_SHUTDOWN', 'false'
-			buildConfigField 'String', 'AUTH_CODE_URL', '"https://dpppt.test.basetis.com/"'
+			buildConfigField 'String', 'AUTH_CODE_URL', '"https://dpppt.basetis.com/"'
 			buildConfigField 'String', 'BUCKET_URL', '"https://dpppt.basetis.com/"'
 			buildConfigField 'String', 'REPORT_URL', '"https://dpppt.basetis.com/"'
 			buildConfigField 'String', 'CONFIG_CERTIFICATE', "\"${project.backend_certs.basetis.CONFIG_CERTIFICATE}\""
@@ -121,7 +121,7 @@ android {
 dependencies {
 	implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-	def dp3t_sdk_version = '0.2.4-D3'
+	def dp3t_sdk_version = '0.2.4-D9'
 	devImplementation "org.dpppt:dp3t-sdk-android:$dp3t_sdk_version-calibration"
 	envTestImplementation "org.dpppt:dp3t-sdk-android:$dp3t_sdk_version"
 	basetisImplementation "org.dpppt:dp3t-sdk-android:$dp3t_sdk_version"

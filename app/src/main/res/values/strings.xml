@@ -808,6 +808,9 @@ Infoline Coronavirus
     <!-- Accessibility Talk back information for android back button in toolbar -->
     <string name="android_accessibility_back_button">"Back"</string>
 
+    <!-- Refresh button in home screen -->
+    <string name="home_refresh_button">Sync now</string>
+
     <!--  Language  -->
     <string name="language_title_screen">Language</string>
     <!--  Langauges texts  -->
