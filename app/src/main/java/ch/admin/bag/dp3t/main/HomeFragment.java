@@ -153,7 +153,7 @@ public class HomeFragment extends Fragment {
 
     private void setupRefresh() {
         refreshButton.setOnClickListener(view -> {
-            tracingViewModel.sync();
+            tracingViewModel.sync(true);
         });
     }
 
@@ -297,7 +297,7 @@ public class HomeFragment extends Fragment {
                                 @Override
                                 public void onAnimationEnd(Animator animation) {
                                     loadingView.setVisibility(VISIBLE);
-                                    tracingViewModel.sync();
+                                    tracingViewModel.sync(false);
                                 }
                             });
                 });
