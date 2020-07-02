@@ -795,7 +795,8 @@
     <string name="android_accessibility_back_button">"Enrere"</string>
 
     <string name="home_refresh_button">Sincronitzar</string>
-
+    <string name="refresh_database_success_message">Sincronització finalitzada.</string>
+    <string name="refresh_database_failure_message">Error en la sincronització. Si us plau, intenta-ho més tard.</string>
 
     <string name="language_title_screen">Llenguatge</string>
 

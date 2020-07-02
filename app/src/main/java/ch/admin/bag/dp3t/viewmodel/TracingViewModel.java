@@ -29,6 +29,7 @@ import ch.admin.bag.dp3t.main.model.TracingStatusInterface;
 import ch.admin.bag.dp3t.util.DeviceFeatureHelper;
 import org.dpppt.android.sdk.DP3T;
 import org.dpppt.android.sdk.TracingStatus;
+import org.dpppt.android.sdk.internal.SyncWorker;
 
 public class TracingViewModel extends AndroidViewModel {
 
@@ -129,11 +130,11 @@ public class TracingViewModel extends AndroidViewModel {
 		return tracingStatusInterface;
 	}
 
-	public void sync(boolean forceSync) {
+	public void sync(boolean forceSync, SyncWorker.OnSyncComplete callback) {
 		new Thread() {
 			@Override
 			public void run() {
-				DP3T.sync(getApplication(), forceSync);
+				DP3T.sync(getApplication(), forceSync, callback);
 			}
 		}.start();
 	}

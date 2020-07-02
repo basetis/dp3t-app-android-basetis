@@ -810,6 +810,8 @@ Infoline Coronavirus
 
     <!-- Refresh button in home screen -->
     <string name="home_refresh_button">Sync now</string>
+    <string name="refresh_database_success_message">Syncronization completed</string>
+    <string name="refresh_database_failure_message">Syncronization failed. Please try again later.</string>
 
     <!--  Language  -->
     <string name="language_title_screen">Language</string>
