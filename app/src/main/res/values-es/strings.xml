@@ -796,7 +796,8 @@
 
 
     <string name="home_refresh_button">Sincronizar</string>
-
+    <string name="refresh_database_success_message">Sincronización finalizada.</string>
+    <string name="refresh_database_failure_message">Error en la sincronización. Por favor inténtelo más tarde.</string>
 
     <string name="language_title_screen">Idioma</string>
 

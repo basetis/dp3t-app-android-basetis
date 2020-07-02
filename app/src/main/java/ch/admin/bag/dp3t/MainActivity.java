@@ -80,7 +80,7 @@ public class MainActivity extends FragmentActivity {
 		}
 
 		tracingViewModel = new ViewModelProvider(this).get(TracingViewModel.class);
-		tracingViewModel.sync(false);
+		tracingViewModel.sync(false, null);
 	}
 
 	@Override

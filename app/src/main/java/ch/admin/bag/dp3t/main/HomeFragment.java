@@ -26,6 +26,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -35,6 +36,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import org.dpppt.android.sdk.TracingStatus;
+import org.dpppt.android.sdk.internal.SyncWorker;
 
 import ch.admin.bag.dp3t.BuildConfig;
 import ch.admin.bag.dp3t.R;
@@ -153,7 +155,25 @@ public class HomeFragment extends Fragment {
 
     private void setupRefresh() {
         refreshButton.setOnClickListener(view -> {
-            tracingViewModel.sync(true);
+            loadingView.setVisibility(VISIBLE);
+            tracingViewModel.sync(true, new SyncWorker.OnSyncComplete() {
+                @Override
+                public void onSuccess() {
+                    getActivity().runOnUiThread(() -> {
+                        Toast.makeText(getContext(), getString(R.string.refresh_database_success_message), Toast.LENGTH_LONG).show();
+                        loadingView.setVisibility(View.GONE);
+
+                    });
+                }
+
+                @Override
+                public void onError() {
+                    getActivity().runOnUiThread(() -> {
+                        loadingView.setVisibility(View.GONE);
+                        Toast.makeText(getContext(), getString(R.string.refresh_database_failure_message), Toast.LENGTH_LONG).show();
+                    });
+                }
+            });
         });
     }
 
@@ -297,7 +317,7 @@ public class HomeFragment extends Fragment {
                                 @Override
                                 public void onAnimationEnd(Animator animation) {
                                     loadingView.setVisibility(VISIBLE);
-                                    tracingViewModel.sync(false);
+                                    tracingViewModel.sync(false, null);
                                 }
                             });
                 });
