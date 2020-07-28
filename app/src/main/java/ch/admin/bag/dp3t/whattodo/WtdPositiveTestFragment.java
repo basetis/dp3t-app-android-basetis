@@ -42,7 +42,12 @@ public class WtdPositiveTestFragment extends Fragment {
 		});
 
 		view.findViewById(R.id.wtd_inform_faq_button).setOnClickListener(v -> {
-			Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.faq_button_url)));
+			Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.faq_button_url_positive_detected)));
+			startActivity(browserIntent);
+		});
+
+		view.findViewById(R.id.wtd_how_report_positive).setOnClickListener(v -> {
+			Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.how_to_report_positive)));
 			startActivity(browserIntent);
 		});
 

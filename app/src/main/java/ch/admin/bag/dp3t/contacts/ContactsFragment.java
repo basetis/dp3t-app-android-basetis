@@ -73,7 +73,7 @@ public class ContactsFragment extends Fragment {
 		setupTracingView();
 
 		view.findViewById(R.id.contacts_faq_button).setOnClickListener(v -> {
-			Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.faq_button_url)));
+			Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.faq_button_url_reports)));
 			startActivity(browserIntent);
 		});
 	}

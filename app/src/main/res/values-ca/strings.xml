@@ -27,7 +27,7 @@
     <string name="inform_send_thankyou">"Gràcies"</string>
 
 
-    <string name="inform_send_thankyou_text">"Heu informat de la vostra aplicació positiva de manera anònima a través de l\'aplicació.  Gràcies per ajudar a contenir la propagació del coronavirus ".</string>
+    <string name="inform_send_thankyou_text">Has informat del teu resultat positiu de manera anònima a través de l\'app. Gràcies per ajudar a contenir la propagació del coronavirus.</string>
 
 
     <string name="inform_fertig_button_title">"Tanca"</string>
@@ -39,7 +39,7 @@
     <string name="tab_theapp_title">"L\'aplicació"</string>
 
 
-    <string name="cancel">"Cancel · lar"</string>
+    <string name="cancel">"Cancel·lar"</string>
 
 
     <string name="push_exposed_title">"Missatge nou"</string>
@@ -63,25 +63,25 @@
     <string name="unexpected_error_title">"S\'ha produït un error inesperat"</string>
 
 
-    <string name="bluetooth_turned_off">"L\'aplicació no funciona perquè el Bluetooth està desactivat"</string>
+    <string name="bluetooth_turned_off">"L\'app no funciona perquè el Bluetooth està desactivat"</string>
 
 
-    <string name="bluetooth_permission_turned_off">"L\'aplicació no funciona perquè el Bluetooth no està permès"</string>
+    <string name="bluetooth_permission_turned_off">"L\'app no funciona perquè el Bluetooth no està permès"</string>
 
 
-    <string name="NSBluetoothPeripheralUsageDescription">"Les reunions es reconeixeran en segon pla mitjançant un Bluetooth de baix consum."</string>
+    <string name="NSBluetoothPeripheralUsageDescription">"Les trobades es reconeixeran en segon pla mitjançant un Bluetooth de baix consum."</string>
 
 
-    <string name="NSBluetoothAlwaysUsageDescription">"Les reunions es reconeixeran en segon pla mitjançant un Bluetooth de baix consum."</string>
+    <string name="NSBluetoothAlwaysUsageDescription">"Les trobades es reconeixeran en segon pla mitjançant un Bluetooth de baix consum."</string>
 
 
-    <string name="android_foreground_service_notification_text">"Les trobades es registraran de forma anònima al vostre dispositiu."</string>
+    <string name="android_foreground_service_notification_text">"Les trobades es registraran de forma anònima al teu dispositiu."</string>
 
 
-    <string name="inform_code_title">"Introduïu el codi Covid"</string>
+    <string name="inform_code_title">"Introdueix el codi covid"</string>
 
 
-    <string name="inform_code_text">"Introduïu el codi Covid que us ha enviat."</string>
+    <string name="inform_code_text">"Introdueix el codi covid que se t'ha enviat."</string>
 
 
     <string name="inform_code_no_code">"Necessites ajuda?"</string>
@@ -90,7 +90,7 @@
     <string name="tracing_setting_title">"Rastreig"</string>
 
 
-    <string name="tracing_setting_text">"Permet traçar anònims"</string>
+    <string name="tracing_setting_text">"Permetre rastreig anònim"</string>
 
 
     <string name="bluetooth_setting_tracking_inactive">"Rastreig desactivat"</string>
@@ -111,7 +111,7 @@
     <string name="push_deactivated_title">"Missatges desactivats"</string>
 
 
-    <string name="push_deactivated_text">"Canvieu la configuració per rebre informació directament en cas d\'informe."</string>
+    <string name="push_deactivated_text">"Canvia la configuració per rebre informació directament en cas d\'un informe.."</string>
 
 
     <string name="meldungen_meldung_title">"Possible infecció"</string>
@@ -120,7 +120,7 @@
     <string name="meldungen_meldung_text">"Se sospita que es contagi una infecció".</string>
 
 
-    <string name="tracing_active_title">"Seguiment actiu"</string>
+    <string name="tracing_active_title">"Rastreig actiu"</string>
 
 
     <string name="tracing_active_text">"Les trobades es registraran de forma anònima."</string>
@@ -129,22 +129,22 @@
     <string name="android_tracing_error_title">"El seguiment no està actiu"</string>
 
 
-    <string name="android_foreground_service_notification_errors">"L\'aplicació actualment no pot funcionar correctament"</string>
+    <string name="android_foreground_service_notification_errors">"En aquests moments, l\'app no pot funcionar correctament"</string>
 
 
     <string name="android_foreground_service_notification_error_network_sync">"S\'ha produït un error en carregar les dades"</string>
 
 
-    <string name="android_foreground_service_notification_error_location_permission">"Perquè l\'aplicació utilitzi Bluetooth, heu d\'activar la vostra ubicació. L\'aplicació en si mateixa no reconeix la vostra ubicació en cap moment."</string>
+    <string name="android_foreground_service_notification_error_location_permission">"Per a què l\'aplicació faci servir Bluetooth, has habilitar la ubicació. L\'aplicació, per si mateixa, no reconeix la teva ubicació en cap moment."</string>
 
 
-    <string name="android_foreground_service_notification_error_battery_optimization">"Perquè el rastreig funciona correctament, l\'aplicació també s\'ha d\'executar en segon pla. Això provocarà un augment menor en l\'ús de la bateria."</string>
+    <string name="android_foreground_service_notification_error_battery_optimization">"Perquè el rastreig funciona correctament, l\'aplicació també s\'ha \'executar en segon pla. Això provocarà un petit augment en l\'ús de la bateria."</string>
 
 
     <string name="preview_warning_title">"Vista prèvia de la versió"</string>
 
 
-    <string name="preview_warning_text">"Aquesta aplicació proporciona una vista prèvia del funcionament del DP-* T. No és un traçador de COVIS-19 que funciona."</string>
+    <string name="preview_warning_text">"Aquesta aplicació proporciona una vista prèvia del funcionament del dp-3t. No és un traçador de covid-19 que funciona."</string>
 
 
     <string name="debug_settings_title">"Configuració de depuració"</string>
@@ -153,37 +153,37 @@
     <string name="debug_state_setting_title">"Sobreescriure l\'estat de l\'aplicació"</string>
 
 
-    <string name="debug_state_setting_text">"Aquest paràmetre sobreescriu l\'estat visual de l\'aplicació. La funcionalitat de rastreig queda sense afectar."</string>
+    <string name="debug_state_setting_text">"Aquest paràmetre sobreescriu l\'estat visual de l\'app. La funcionalitat de rastreig no es veu afectada."</string>
 
 
-    <string name="debug_state_setting_option_none">"Sense cap sobreescriptura"</string>
+    <string name="debug_state_setting_option_none">"No sobreescriure"</string>
 
 
     <string name="debug_state_setting_option_ok">"Saludable"</string>
 
 
-    <string name="debug_state_setting_option_exposed">"El contacte ha resultat positiu"</string>
+    <string name="debug_state_setting_option_exposed">"El contacte ha donat positiu"</string>
 
 
-    <string name="debug_state_setting_option_infected">"Es va informar com a positiu"</string>
+    <string name="debug_state_setting_option_infected">"T'has informat com un cas positiu"</string>
 
 
-    <string name="debug_sdk_state_title">"Estat SDK"</string>
+    <string name="debug_sdk_state_title">"Estat del SDK"</string>
 
 
-    <string name="debug_sdk_state_text">"Estat actual del SDK DP-3T"</string>
+    <string name="debug_sdk_state_text">"Estat actual del SDK dp-3t"</string>
 
 
     <string name="debug_sdk_state_last_synced">"Última sincronització"</string>
 
 
-    <string name="debug_sdk_state_self_exposed">"S\'ha informat"</string>
+    <string name="debug_sdk_state_self_exposed">"Has informat"</string>
 
 
     <string name="debug_sdk_state_contact_exposed">"Contacte notificat"</string>
 
 
-    <string name="debug_sdk_state_number_handshakes">"Nombre de cops de mà"</string>
+    <string name="debug_sdk_state_number_handshakes">"Nombre d\'encaixades de mà"</string>
 
 
     <string name="debug_sdk_state_boolean_true">"Sí"</string>
@@ -204,19 +204,19 @@
     <string name="whattodo_title_symptoms">"Símptomes de la malaltia"</string>
 
 
-    <string name="whattodo_subtitle_symptoms">"Què fer si ..."</string>
+    <string name="whattodo_subtitle_symptoms">"Què fer si..."</string>
 
 
-    <string name="whattodo_title_positivetest">"demostres positiu"</string>
+    <string name="whattodo_title_positivetest">"dones positiu"</string>
 
 
-    <string name="whattodo_subtitle_positivetest">"Què fer si ..."</string>
+    <string name="whattodo_subtitle_positivetest">"Què fer si..."</string>
 
 
-    <string name="inform_detail_subtitle">"Què fer si ..."</string>
+    <string name="inform_detail_subtitle">"Què fer si..."</string>
 
 
-    <string name="inform_detail_title">"Proves positiu?"</string>
+    <string name="inform_detail_title">"Has donat positiu?"</string>
 
 
     <string name="inform_detail_box_subtitle">"Amb el codi Covid"</string>
@@ -225,28 +225,31 @@
     <string name="inform_detail_box_title">"Envia un informe anònim"</string>
 
 
-    <string name="inform_detail_box_button">"Introduïu el codi Covid"</string>
+    <string name="inform_detail_box_button">"Introdueix el codi Covid"</string>
 
 
-    <string name="inform_detail_box_text">"Utilitzeu el codi Covid que us ha enviat per informar de la prova de manera anònima a l\'aplicació."</string>
+    <string name="inform_detail_box_text">"Utilitza el codi Covid que se t\'ha enviat per informar del resultat de manera anònima a l\'app."</string>
 
 
-    <string name="symptom_detail_subtitle">"Què faig si ..."</string>
+    <string name="symptom_detail_subtitle">"Què faig si..."</string>
 
 
-    <string name="symptom_detail_title">"Em trobo malament?"</string>
+    <string name="symptom_detail_title">"Em trobo malament"</string>
 
 
-    <string name="symptom_detail_box_subtitle">"En el cas dels símptomes ..."</string>
+    <string name="symptom_detail_box_subtitle">"En cas de tenir símptomes"</string>
 
 
-    <string name="symptom_detail_box_title">"Poseu-vos en contacte amb el vostre metge"</string>
+    <string name="symptom_detail_box_title">"Contacta amb el teu metge o metgessa"</string>
 
 
-    <string name="symptom_detail_box_button">"A la verificació del coronavirus"</string>
+    <string name="symptom_detail_box_button">"¿Tens símptomes pero no estás segur? Pincha aquí!"</string>
 
 
-    <string name="symptom_detail_box_text">"Si teniu possibles símptomes de coronavirus, poseu-vos en contacte amb el vostre metge o amb el servei d\'emergència mèdic".</string>
+    <string name="how_communicate_box_button">"¿Com puc comunicar que he donat positiu en COVID 19? "</string>
+
+
+    <string name="symptom_detail_box_text">"Si tens possibles símptomes de coronavirus, posa\'t en contacte amb el teu metge o amb el servei d\'emergències mèdiques.".</string>
 
 
     <string name="inform_detail_navigation_title">"Positiu provat"</string>
@@ -254,19 +257,19 @@
 
     <string name="symptom_detail_navigation_title">"Símptomes"</string>
     <string name="tracing_turned_off_title">"Rastreig desactivat"</string>
-    <string name="tracing_turned_off_text">"Activa el traçat perquè funcioni l\'aplicació."</string>
+    <string name="tracing_turned_off_text">"Activa el rastreig per a què funcioni l\'app."</string>
     <string name="bluetooth_turned_off_title">"Bluetooth desactivat"</string>
     <string name="bluetooth_turned_off_text">"Activa el Bluetooth al dispositiu perquè funcioni el rastreig anònim."</string>
     <string name="bluetooth_turn_on_button_title">"Encén el Bluetooth"</string>
     <string name="bluetooth_permission_error_title">"S\'ha rebutjat l\'ús del Bluetooth"</string>
-    <string name="bluetooth_permission_error_text">"Habiliteu l\'ús del Bluetooth perquè funcioni el rastreig anònim."</string>
+    <string name="bluetooth_permission_error_text">"Habilita el Bluetooth per a què funcioni el rastreig anònim."</string>
 
 
     <string name="symptom_detail_corona_check_url">"https://canalsalut.gencat.cat/ca/salut-a-z/c/coronavirus-2019-ncov/ciutadania/que-es-coronavirus/simptomes-i-tractament/"</string>
     <string name="push_open_settings_button">"Canvia la configuració"</string>
 
 
-    <string name="meldungen_no_meldungen_subtitle">"No s\'ha registrat cap infecció potencial"</string>
+    <string name="meldungen_no_meldungen_subtitle">"No s\'ha informat de cap infecció potencial"</string>
 
 
     <string name="no_meldungen_box_title">"Protegeix-te"</string>
@@ -275,13 +278,13 @@
     <string name="no_meldungen_box_subtitle">"Que hauria de fer?"</string>
 
 
-    <string name="no_meldungen_box_text">"Seguiu les recomanacions del govern sobre higiene i distanciament social".</string>
+    <string name="no_meldungen_box_text">"Segueix les recomanacions del govern sobre higiene i distanciament social".</string>
 
 
     <string name="meldung_detail_positive_tested_title">"Positiu provat"</string>
 
 
-    <string name="meldung_detail_positive_tested_subtitle">"Has provat positiu per al nou coronavirus".</string>
+    <string name="meldung_detail_positive_tested_subtitle">"Has donat positiu per al nou coronavirus.".</string>
 
 
     <string name="meldung_detail_positive_test_box_subtitle">"Què he de fer?"</string>
@@ -290,11 +293,11 @@
     <string name="meldung_detail_positive_test_box_title">"Autoaïllament"</string>
 
 
-    <string name="meldung_detail_positive_test_box_text">"Seguiu les instruccions sobre l\'aïllament propi".</string>
+    <string name="meldung_detail_positive_test_box_text">"Segueix les instruccions sobre autoaïllament".</string>
     <string name="tracing_ended_title">"S\'ha acabat el seguiment"</string>
     <string name="tracing_ended_text">"No hi ha més trobades registrades"</string>
     <string name="exposed_info_contact_hotline">"Contacta amb"</string>
-    <string name="meldung_homescreen_positive_info_line1">"Segueix el"</string>
+    <string name="meldung_homescreen_positive_info_line1">"Sigue las"</string>
     <string name="meldung_homescreen_positive_info_line2">"Instruccions sobre l\'autoïllament"</string>
 
 
@@ -305,26 +308,26 @@
     <string name="meldung_homescreen_positiv_title">"Positiu provat"</string>
 
 
-    <string name="meldung_detail_exposed_subtitle">"Sospita que es pot infecció potencial"</string>
-    <string name="meldung_homescreen_positiv_text">"Has provat positiu per al nou coronavirus".</string>
+    <string name="meldung_detail_exposed_subtitle">"Es sospita possible infecció"</string>
+    <string name="meldung_homescreen_positiv_text">"Has donat positiu en coronavirus".</string>
 
 
-    <string name="reset_onboarding">"Restablir bord"</string>
+    <string name="reset_onboarding">"Restablir incorporació"</string>
 
 
     <string name="date_today">"Avui"</string>
 
 
-    <string name="date_days_ago">"{COUNT} dies enrere"</string>
+    <string name="date_days_ago">"Fa {COUNT} dies "</string>
 
 
     <string name="meldungen_detail_whattodo">"Que hauria de fer?"</string>
 
 
-    <string name="meldungen_detail_call">"Truca\'ns"</string>
+    <string name="meldungen_detail_call">"Escriu a: comissio.desconfinament.persones@basetis.com"</string>
 
 
-    <string name="meldungen_detail_call_text">"Coronavirus infolina (24 hores al dia)"</string>
+    <string name="meldungen_detail_call_text">"Coronavirus infolínia (24 hores al dia)"</string>
 
 
     <string name="meldungen_detail_call_button">"Truca ara"</string>
@@ -333,16 +336,16 @@
     <string name="meldungen_detail_explanation_title">"Ves amb compte!"</string>
 
 
-    <string name="meldungen_detail_explanation_text1">"Podries estar contagiós sense adonar-te\'n".</string>
+    <string name="meldungen_detail_explanation_text1">"Podries ser un cas contagiós sense adonar-te\'n".</string>
 
 
-    <string name="meldungen_detail_explanation_text2">"Protegiu la vostra família, els vostres amics i els que us envolten. Eviteu els contactes fins a 10 dies després d\'una possible infecció."</string>
+    <string name="meldungen_detail_explanation_text2">"Protegeix a la teva família, amistats i a qui t\'envolti. Evita els contactes fins a 10 dies després d\'una possible infecció."</string>
 
 
-    <string name="meldungen_detail_guard_others">"Protegir altres persones"</string>
+    <string name="meldungen_detail_guard_others">"Protegeix a altres persones"</string>
 
 
-    <string name="meldungen_detail_guard_text">"Si teniu cap pregunta: Infona Coronavirus  41 58 387 77 78 "</string>
+    <string name="meldungen_detail_guard_text">"Si tens cap pregunta: comissio.desconfinament.persones@basetis.com"</string>
 
 
     <string name="meldungen_detail_call_again_button">"Truca un altre cop"</string>
@@ -360,10 +363,10 @@
     <string name="onboarding_prinzip_title">"Un pas per davant del virus"</string>
 
 
-    <string name="onboarding_prinzip_text1">"Mitjançant l\'ús de l\'aplicació dp3t, tots podem ajudar a contenir la propagació del nou coronavirus."</string>
+    <string name="onboarding_prinzip_text1">"Amb l\'ús de l\'app dp-3t, totes i tots podem ajudar a contenir la propagació del nou coronavirus."</string>
 
 
-    <string name="onboarding_prinzip_text2">"L\'aplicació proporciona informació sobre les sospites d\'infeccions. D\'aquesta manera, es pot trencar la cadena d\'infecció".</string>
+    <string name="onboarding_prinzip_text2">"L\'aplicació proporciona informació sobre infeccions sospitoses. D\'aquesta manera, es pot trencar la cadena d\'infecció".</string>
 
 
     <string name="onboarding_privacy_heading">"Privacitat per disseny"</string>
@@ -375,16 +378,16 @@
     <string name="onboarding_privacy_text1">"Els dispositius es comuniquen de forma anònima."</string>
 
 
-    <string name="onboarding_privacy_text2">"Totes les dades es xifren i només es guarden localment al telèfon intel·ligent."</string>
+    <string name="onboarding_privacy_text2">"Totes les dades estan encriptades i només es guarden localment al telèfon intel·ligent."</string>
 
 
     <string name="onboarding_begegnungen_heading">"Què fa l\'aplicació?"</string>
 
 
-    <string name="onboarding_begegnungen_title">"Reconeixement de trobades que utilitzen Bluetooth"</string>
+    <string name="onboarding_begegnungen_title">"Reconeixement de trobades amb Bluetooth"</string>
 
 
-    <string name="onboarding_begegnungen_text1">"L\'aplicació reconeix automàticament quan dos usuaris han estat molt a prop durant un cert temps."</string>
+    <string name="onboarding_begegnungen_text1">"L\'aplicació reconeix automàticament quan dues persones usuàries han estat molt a prop durant un cert temps."</string>
 
 
     <string name="onboarding_begegnungen_text2">"S\'utilitza Bluetooth Low Energy (BLE) per fer-ho. No s\'utilitzen dades GPS."</string>
@@ -393,19 +396,19 @@
     <string name="onboarding_meldung_heading">"Què fa l\'aplicació?"</string>
 
 
-    <string name="onboarding_meldung_title">"Informe de possibles infeccions"</string>
+    <string name="onboarding_meldung_title">"Informe d\'infecció potencial"</string>
 
 
-    <string name="onboarding_meldung_text1">"L\'aplicació us notifica si se sospita una infecció potencial."</string>
+    <string name="onboarding_meldung_text1">"L\'aplicació et notifica si se sospita d\'una infecció potencial."</string>
 
 
-    <string name="onboarding_meldung_text2">"Responent adequadament, podeu protegir-vos a vosaltres i a les altres persones".</string>
+    <string name="onboarding_meldung_text2">"Responent adequadament, pots protegir-te a tu i a les altres persones.".</string>
 
 
     <string name="onboarding_bluetooth_title">"Activa Bluetooth"</string>
 
 
-    <string name="onboarding_bluetooth_text">"Per poder utilitzar l\'aplicació, heu d\'activar el Bluetooth."</string>
+    <string name="onboarding_bluetooth_text">"Per poder utilitzar l\'aplicació, has d\'activar el Bluetooth."</string>
 
 
     <string name="onboarding_bluetooth_button">"Activa Bluetooth"</string>
@@ -414,43 +417,43 @@
     <string name="onboarding_good_to_know">"És bo saber-ho"</string>
 
 
-    <string name="onboarding_bluetooth_gtk_title1">"Restes anònim"</string>
+    <string name="onboarding_bluetooth_gtk_title1">"Restes anònim/a"</string>
 
 
     <string name="onboarding_bluetooth_gtk_text1">"No hi ha dades personals visibles mitjançant Bluetooth."</string>
 
 
-    <string name="onboarding_bluetooth_gtk_title2">"Menor augment en l\'ús de la bateria"</string>
+    <string name="onboarding_bluetooth_gtk_title2">"Petit augment en l'ús de la bateria"</string>
 
 
-    <string name="onboarding_bluetooth_gtk_text2">"L\'app funciona amb menys energia possible. Només hi ha un augment menor en l\'ús de la bateria."</string>
+    <string name="onboarding_bluetooth_gtk_text2">"L\'app funciona amb la menor energia possible. Només hi ha un petit augment en l\'ús de la bateria."</string>
 
 
     <string name="onboarding_push_title">"Permet missatges"</string>
 
 
-    <string name="onboarding_push_text">"Per rebre notificacions de l\'aplicació, heu d\'habilitar els missatges."</string>
+    <string name="onboarding_push_text">"Per rebre notificacions de l\'aplicació, has d\'habilitar-les."</string>
 
 
-    <string name="onboarding_push_button">"Activa missatges"</string>
+    <string name="onboarding_push_button">"Habilita les notificacions"</string>
 
 
     <string name="onboarding_push_gtk_title1">"Notificat immediatament"</string>
 
 
-    <string name="onboarding_push_gtk_text1">"En cas que es pugui produir una infecció, rebrà un missatge a la pantalla de bloqueig."</string>
+    <string name="onboarding_push_gtk_text1">"En cas d\'una possible infecció, rebràs un missatge a la pantalla de bloqueig."</string>
 
 
     <string name="inform_send_getwell_title">"Millora\'t aviat!"</string>
 
 
-    <string name="inform_send_getwell_text">"Poseu-vos ben aviat! Seguiu les instruccions sobre l\'autoliïllament."</string>
+    <string name="inform_send_getwell_text">"Recupera\'t ben aviat! Segueix les instruccions sobre autoaïllament."</string>
 
 
     <string name="onboarding_go_title">"L\'aplicació està a punt per començar"</string>
 
 
-    <string name="onboarding_go_text">"Gràcies per ajudar a protegir-vos a vosaltres i als altres."</string>
+    <string name="onboarding_go_text">"Gràcies per ajudar a protegir-te a tu i a les altres persones."</string>
 
 
     <string name="onboarding_go_button">"Començar"</string>
@@ -459,7 +462,7 @@
     <string name="android_onboarding_bt_permission_title">"Activa la ubicació per a Bluetooth"</string>
 
 
-    <string name="android_onboarding_bt_permission_text">"Perquè l\'aplicació funcioni i per accedir al Bluetooth, heu d\'habilitar la funció d\'ubicació."</string>
+    <string name="android_onboarding_bt_permission_text">"Per tal que l\'aplicació funcioni i per accedir al Bluetooth, has d\'habilitar la funció d\'ubicació."</string>
 
 
     <string name="android_onboarding_bt_permission_button">"Permet"</string>
@@ -468,13 +471,13 @@
     <string name="android_onboarding_bt_permission_goodtoknow">"És bo saber-ho"</string>
 
 
-    <string name="android_onboarding_bt_permission_info_1_title">"La vostra ubicació continua sent secreta"</string>
+    <string name="android_onboarding_bt_permission_info_1_title">"La teva ubicació continua sent secreta"</string>
 
 
-    <string name="android_onboarding_bt_permission_info_1_text">"En dispositius Android, habilitar Bluetooth requereix que permeteu compartir la vostra ubicació. És per això que s\'ha d\'activar la funció d\'ubicació, fins i tot si l\'aplicació no registra la vostra ubicació en cap moment."</string>
+    <string name="android_onboarding_bt_permission_info_1_text">"En dispositius Android, habilitar Bluetooth requereix que permetis compartir la teva ubicació. És per això que s\'ha d\'activar la funció d\'ubicació, fins i tot si l\'aplicació no registra la teva ubicació en cap moment."</string>
 
 
-    <string name="android_onboarding_bt_permission_info_2_title">"Restes anònim"</string>
+    <string name="android_onboarding_bt_permission_info_2_title">"Restes anònim/a"</string>
 
 
     <string name="android_onboarding_bt_permission_info_2_text">"No hi ha dades personals visibles mitjançant Bluetooth."</string>
@@ -483,7 +486,7 @@
     <string name="android_onboarding_battery_permission_title">"Ignora l\'optimització de la bateria"</string>
 
 
-    <string name="android_onboarding_battery_permission_text">"Per poder reconèixer les trobades en tot moment, la funció d\'optimització de la bateria d\'aquesta aplicació s\'ha de desactivar."</string>
+    <string name="android_onboarding_battery_permission_text">"Per poder reconèixer les trobades en tot moment, la funció d\'optimització de la bateria d\'aquesta aplicació ha d\'estar desactivada."</string>
 
 
     <string name="android_onboarding_battery_permission_button">"Permet"</string>
@@ -492,16 +495,16 @@
     <string name="android_onboarding_battery_permission_info_1_title">"Només per a aquesta aplicació"</string>
 
 
-    <string name="android_onboarding_battery_permission_info_1_text">"Perquè l\'aplicació funcioni, també s\'ha d\'executar en segon pla. Es pot desactivar l\'optimització de la bateria per a aplicacions individuals, de manera que això sigui possible."</string>
+    <string name="android_onboarding_battery_permission_info_1_text">"Per tal que l\'aplicació funcioni, també s\'ha d\'executar en segon pla. Es pot desactivar l\'optimització de la bateria per a aplicacions individuals, de manera que això sigui possible."</string>
 
 
-    <string name="android_onboarding_battery_permission_info_2_title">"Menor augment en l\'ús de la bateria"</string>
+    <string name="android_onboarding_battery_permission_info_2_title">"Petit augment en l\'ús de la bateria"</string>
 
 
-    <string name="android_onboarding_battery_permission_info_2_text">"L\'app funciona amb menys energia possible. Només hi ha un augment menor en l\'ús de la bateria."</string>
+    <string name="android_onboarding_battery_permission_info_2_text">"L\'app funciona amb la menor energia possible. Només hi ha un petit augment en l\'ús de la bateria."</string>
 
 
-    <string name="android_onboarding_bt_permission_button_allowed">"Activat"</string>
+    <string name="android_onboarding_bt_permission_button_allowed">"Habilitat"</string>
 
 
     <string name="android_onboarding_battery_permission_button_deactivated">"Desactivat"</string>
@@ -510,16 +513,16 @@
     <string name="homescreen_meldung_data_outdated_title">"No hi ha dades actuals"</string>
 
 
-    <string name="homescreen_meldung_data_outdated_text">"Fa temps que no és possible sincronitzar els informes. Comproveu que el vostre dispositiu estigui connectat a Internet."</string>
+    <string name="homescreen_meldung_data_outdated_text">"Fa temps que no és possible sincronitzar els informes. Comprova que el teu dispositiu estigui connectat a Internet."</string>
 
 
-    <string name="homescreen_meldung_data_outdated_retry_button">"Torna a intentar"</string>
+    <string name="homescreen_meldung_data_outdated_retry_button">"Torna-ho a intentar"</string>
 
 
     <string name="inform_code_invalid_title">"Codi no vàlid"</string>
 
 
-    <string name="inform_code_invalid_subtitle">"Si teniu dubtes: App-Hotline  41 58 466 07 99 "</string>
+    <string name="inform_code_invalid_subtitle">"Si tens dubtes: comissio.desconfinament.persones@basetis.com"</string>
 
 
     <string name="date_one_day_ago">"Fa un dia"</string>
@@ -528,52 +531,52 @@
     <string name="meldung_detail_new_contact_title">"Nou informe"</string>
 
 
-    <string name="meldung_detail_new_contact_subtitle">"En aquest dia, una infecció també va ser possible".</string>
+    <string name="meldung_detail_new_contact_subtitle">"Per aquesta data, una infecció també podia ser possible".</string>
 
 
-    <string name="time_inconsistency_title">"Error horari"</string>
+    <string name="time_inconsistency_title">"Error de temps"</string>
 
 
-    <string name="time_inconsistency_text">"El temps s\'ha de definir correctament perquè el seguiment funcioni".</string>
+    <string name="time_inconsistency_text">"El temps s\'ha de definir correctament perquè el rastreig funcioni.".</string>
 
 
     <string name="begegnungen_restart_error_title">"S\'ha de reiniciar"</string>
 
 
-    <string name="begegnungen_restart_error_text">"S\'ha produït un error inesperat. Reinicieu el dispositiu."</string>
+    <string name="begegnungen_restart_error_text">"S\'ha produït un error inesperat. Reinicia el dispositiu."</string>
 
 
     <string name="meldungen_background_error_title">"S\'ha desactivat l\'actualització de fons."</string>
 
 
-    <string name="meldungen_background_error_text">"Canvieu la configuració per rebre una notificació fora de l\'aplicació també en cas de presentar-vos un informe."</string>
+    <string name="meldungen_background_error_text">"Canvia la configuració per rebre una notificació fora de l\'aplicació així com en cas d'un informe."</string>
 
 
     <string name="meldungen_background_error_button">"Canvia la configuració"</string>
 
 
-    <string name="force_update_text">"Instal·leu la nova versió de l\'aplicació perquè funcioni el traçat."</string>
+    <string name="force_update_text">"Instal·la la nova versió de l\'aplicació per a què el rastreig funcioni."</string>
 
 
     <string name="meldung_in_app_alert_ignore_button">"Ignora"</string>
 
 
-    <string name="meldung_in_app_alert_accept_button">"A les notificacions"</string>
+    <string name="meldung_in_app_alert_accept_button">"Anar a notificacions"</string>
 
 
     <string name="meldungen_detail_call_again">"Truca un altre cop"</string>
 
 
-    <string name="network_error">"Si us plau, comproveu la vostra connexió a Internet"</string>
+    <string name="network_error">"Si us plau, comprova la teva connexió a Internet"</string>
 
 
-    <string name="unexpected_error_with_retry">"S\'ha produït un error inesperat. Torneu-ho a provar."</string>
+    <string name="unexpected_error_with_retry">"S\'ha produït un error inesperat. Torna-ho a provar."</string>
 
 
-    <string name="invalid_response_auth_code">"A causa d\'un error del sistema, no es pot utilitzar correctament el codi d\'autenticació. Truqueu a la línia directa."</string>
+    <string name="invalid_response_auth_code">"A causa d\'un error del sistema, no es pot utilitzar correctament el teu codi d\'autenticació. Escriu a: comissio.desconfinament.persones@basetis.com".</string>
 
 
-    <string name="error_location_permission_title">"L\'ús de la ubicació s\'ha rebutjat"</string>
+    <string name="error_location_permission_title">"L\'ús de la ubicació ha estat rebutjat"</string>
 
 
     <string name="error_location_permission_button">"Permet"</string>
@@ -618,13 +621,13 @@
     <string name="accessibility_12nd">"Dotzena"</string>
 
 
-    <string name="accessibility_code_button_disabled_hint">"Introduïu tot el codi i premeu el botó."</string>
+    <string name="accessibility_code_button_disabled_hint">"Introdueix el codi complet i prem el botó."</string>
 
 
-    <string name="error_battery_optimization_title">"Optimització de l\'ús de la bateria activat"</string>
+    <string name="error_battery_optimization_title">"Optimització de l\'ús de la bateria activada"</string>
 
 
-    <string name="foreground_service_notification_error_location_service">"Habiliteu la informació sobre la ubicació perquè l\'aplicació pugui utilitzar Bluetooth. L\'aplicació no reconeix la vostra ubicació en cap moment."</string>
+    <string name="foreground_service_notification_error_location_service">"Habilita la informació sobre la ubicació perquè l\'aplicació pugui utilitzar Bluetooth. L\'aplicació no reconeix la teva ubicació en cap moment."</string>
 
 
     <string name="error_location_services_title">"Ubicació desactivada"</string>
@@ -642,7 +645,7 @@
     <string name="sync_warning_notification_title">"S\'ha produït un error"</string>
 
 
-    <string name="sync_warning_notification_text">"Obriu l\'aplicació per corregir l\'error."</string>
+    <string name="sync_warning_notification_text">"Obre l\'aplicació per corregir l\'error."</string>
 
 
     <string name="meldung_animation_continue_button">"Continuar"</string>
@@ -657,13 +660,13 @@
     <string name="sync_error_text">"S\'ha produït un error de sincronització"</string>
 
 
-    <string name="sync_error_button">"Torna a intentar"</string>
+    <string name="sync_error_button">"Torna-ho a intentar"</string>
 
 
     <string name="begegnung_detail_faq1_title">"Què és una trobada?"</string>
 
 
-    <string name="begegnung_detail_faq1_text">"Si els telèfons intel·ligents amb l\'aplicació estan a prop de diversos minuts, això es registra al vostre dispositiu com a trobada."</string>
+    <string name="begegnung_detail_faq1_text">"Si els smartphones amb l\'app són a prop durant uns quants minuts, això queda registrat al teu dispositiu com a trobada."</string>
 
 
     <string name="begegnung_detail_faq2_title">"Les meves dades són segures?"</string>
@@ -672,10 +675,10 @@
     <string name="begegnung_detail_faq2_text">"En cas de trobada, només es canvia un codi xifrat. Aquest es desa localment als dispositius i es suprimeix 21 dies després."</string>
 
 
-    <string name="begegnungen_detail_faq3_title">"S\'ha d\'activar el Bluetooth tot el temps?"</string>
+    <string name="begegnungen_detail_faq3_title">"El Bluetooth ha de romandre activat tot el temps?"</string>
 
 
-    <string name="begegnungen_detail_faq3_text">"Per reconèixer les trobades, el Bluetooth s\'ha d\'encendre sempre. Això provoca només un augment menor en l\'ús de la bateria."</string>
+    <string name="begegnungen_detail_faq3_text">"Per reconèixer les trobades, el Bluetooth s\'ha de mantenir activat. Això provoca només un petit augment de l\'ús de la bateria."</string>
 
 
     <string name="faq_button_title">"FAQs"</string>
@@ -684,19 +687,19 @@
     <string name="meldungen_nomeldungen_faq1_title">"Què són els informes?"</string>
 
 
-    <string name="meldungen_nomeldungen_faq1_text">"L\'aplicació comprova regularment per veure si alguna trobada que ha registrat ha resultat positiva per al virus. Si és possible que hagi estat infectat, rebrà un missatge a la pantalla de bloqueig."</string>
+    <string name="meldungen_nomeldungen_faq1_text">"L\'aplicació comprova regularment si alguna trobada que ha registrat ha donat positiva per al virus. Si existeix la possibilitat que t\'hagis infectat, rebràs un missatge a la pantalla de bloqueig."</string>
 
 
     <string name="meldungen_nomeldungen_faq2_titel">"Què és una infecció potencial?"</string>
 
 
-    <string name="meldungen_nomeldungen_faq2_text">"L\'aplicació no només comprova si ha tingut trobades amb persones infectades, sinó quant de temps i quina estreta han estat. Només se us notificarà si hi ha sospites suficients que heu estat infectades".</string>
+    <string name="meldungen_nomeldungen_faq2_text">"L\'aplicació no només comprova si ha tingut trobades amb persones infectades, sinó quant de temps i com de prop heu estat. Només rebràs una notificació si hi ha sospites suficients que t\'has infectat".</string>
 
 
-    <string name="meldungen_detail_explanation_text3">"Tan aviat com tingueu símptomes, poseu-vos en contacte amb el vostre metge".</string>
+    <string name="meldungen_detail_explanation_text3">"Tan aviat com tinguis símptomes, posa\'t en contacte amb el teu metge o metgessa".</string>
 
 
-    <string name="meldungen_explanation_link_title">"Instruccions sobre l\'auto quarantena"</string>
+    <string name="meldungen_explanation_link_title">"Instruccions sobre l\'autoquarantena"</string>
 
 
     <string name="meldungen_explanation_link_url">"https://canalsalut.gencat.cat/ca/salut-a-z/c/coronavirus-2019-ncov/ciutadania/confinament/"</string>
@@ -705,7 +708,7 @@
     <string name="meldungen_meldungen_faq1_title">"He de trucar?"</string>
 
 
-    <string name="meldungen_meldungen_faq1_text">"És important que truqueu cada vegada que rebeu una notificació. Restareu anònim. No es registraran dades personals."</string>
+    <string name="meldungen_meldungen_faq1_text">"És important que truquis cada vegada que rebis una notificació. Romandràs en l\'anonimat i no es registraran les teves dades personals."</string>
 
 
     <string name="meldungen_detail_call_thankyou_title">"Gracies per la teva cooperació."</string>
@@ -723,31 +726,31 @@
     <string name="meldungen_detail_no_meldungen_continue">"Continuar"</string>
 
 
-    <string name="meldungen_detail_no_meldungen_hinweis">"Tingueu en compte"</string>
+    <string name="meldungen_detail_no_meldungen_hinweis">"A tenir en compte"</string>
 
 
     <string name="no_meldungen_box_link">"D\'aquesta manera, ens protegim"</string>
 
 
-    <string name="no_meldungen_box_url">"https://canalsalut.gencat.cat/ca/salut-a-z/c/coronavirus-2019-ncov/ciutadania/confinament/"</string>
+    <string name="no_meldungen_box_url">"https://canalsalut.gencat.cat/ca/salut-a-z/c/coronavirus-2019-ncov/ciutadania/represa-de-la-normalitat/mesures-de-proteccio/"</string>
 
 
     <string name="inform_detail_faq1_title">"Què és un codi Covid?"</string>
 
 
-    <string name="inform_detail_faq1_text">"Les persones que han resultat positives per al nou coronavirus reben un codi Covidcode. Això garanteix que només es notifiquen els casos confirmats a través de l\'aplicació".</string>
+    <string name="inform_detail_faq1_text">"Les persones que donen positiu en coronavirus reben un codi Covid. Això garanteix que només es notifiquin els casos confirmats a través de l\'aplicació".</string>
 
 
-    <string name="inform_detail_faq2_title">"Com puc romandre anònim?"</string>
+    <string name="inform_detail_faq2_title">"Com puc mantenir l'anonimat?"</string>
 
 
-    <string name="inform_detail_faq2_text">"Només s\'envien les claus temporals de l\'aplicació. No hi ha dades personals. Altres aplicacions dp3t poden comprovar si han tingut alguna trobada amb l\'aplicació els darrers dies."</string>
+    <string name="inform_detail_faq2_text">"Només s\'envien les claus temporals de l\'aplicació, sense cap dada personal. Altres aplicacions dp-3t poden comprovar si han tingut alguna trobada amb la teva aplicació en els darrers dies."</string>
 
 
-    <string name="inform_send_endtracing_title">"S\'ha acabat el seguiment"</string>
+    <string name="inform_send_endtracing_title">"S\'ha acabat el rastreig"</string>
 
 
-    <string name="inform_send_endtracing_text">"Després d\'un text positiu, la traça s\'acaba automàticament."</string>
+    <string name="inform_send_endtracing_text">"Després de notificar el teu cas positiu, el rastreig finalitza automàticament."</string>
 
 
     <string name="infoline_tel_number">"061"</string>
@@ -756,25 +759,34 @@
     <string name="faq_button_url">"https://web.gencat.cat/ca/coronavirus/preguntes-mes-frequents/"</string>
 
 
+    <string name="faq_button_url_positive_detected">"https://canalsalut.gencat.cat/ca/salut-a-z/c/coronavirus-2019-ncov/ciutadania/represa-de-la-normalitat/deteccio-de-casos-i-seguiment-de-contactes/"</string>
+
+
+    <string name="faq_button_url_reports">https://canalsalut.gencat.cat/ca/salut-a-z/c/coronavirus-2019-ncov/ciutadania/</string>
+
+
+    <string name="how_to_report_positive">https://sites.google.com/s/0B9v9EAhxyYALNFdhS09mZ0ZzWms/p/11J34Io2T3U_x2jHgu5PtlBvs7Ym0DZxf/edit</string>
+
+
     <string name="inform_code_intro_title">"Informació important"</string>
 
 
-    <string name="inform_code_intro_text">"Tot i que no s\'envien dades personals relacionades amb vosaltres, pot ser que algú recordi la seva trobada amb vosaltres des de la data".</string>
+    <string name="inform_code_intro_text">"Tot i que no s\'envia cap dada personal, pot ser que algú recordi la trobada amb tu des de la data".</string>
 
 
     <string name="inform_code_intro_button">"D\'acord"</string>
 
 
-    <string name="symptom_faq1_title">"No tens dubtes sobre els símptomes?"</string>
+    <string name="symptom_faq1_title">Tens dubtes sobre els símptomes?"</string>
 
 
-    <string name="symptom_faq1_text">"Teniu símptomes, però no esteu segurs del que hauríeu de fer? Respon a les preguntes del FOPH Coronavirus Check per rebre consell sobre què fer".</string>
+    <string name="symptom_faq1_text">"Teniu símptomes, però no esteu segurs del que hauríeu de fer? Clickeu aquí:"</string>
 
 
-    <string name="meldungen_positive_tested_faq1_title">"Per què ha acabat el traçat?"</string>
+    <string name="meldungen_positive_tested_faq1_title">"Per què ha acabat el rastreig?"</string>
 
 
-    <string name="meldungen_positive_tested_faq1_text">"Després d\'un text positiu, la traça a l\'aplicació s\'acaba automàticament."</string>
+    <string name="meldungen_positive_tested_faq1_text">"Després d\'un cas positiu, l\'app atura el rastreig automàticament."</string>
 
 
     <string name="language_key">"ca"</string>

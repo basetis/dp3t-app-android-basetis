@@ -256,6 +256,8 @@ Thank you for helping to contain the spread of the coronavirus."</string>
     <!-- Symptom Detail Weisse Box Button -->
     <string name="symptom_detail_box_button">"To the coronavirus check"</string>
 
+    <string name="how_communicate_box_button">"¿How i can communicate COVID 19 positive?"</string>
+
     <!-- Symptom Detail Weisse Box Text -->
     <string name="symptom_detail_box_text">"If you have possible coronavirus symptoms, contact your doctor or the medical emergency service."</string>
 
@@ -532,8 +534,7 @@ Infoline Coronavirus
     <string name="inform_code_invalid_title">"Code invalid"</string>
 
     <!-- Fehlermeldung Subtitle ungültiger Code -->
-    <string name="inform_code_invalid_subtitle">"If you have any questions: App-Hotline
-+41 58 466 07 99"</string>
+    <string name="inform_code_invalid_subtitle">"If you have any questions: App-Hotline comissio.desconfinament.persones@basetis.com"</string>
 
     <!-- Datum: Vor 1 Tag -->
     <string name="date_one_day_ago">"1 day ago"</string>
@@ -743,7 +744,7 @@ Infoline Coronavirus
     <string name="no_meldungen_box_link">"This way, we protect ourselves"</string>
 
     <!-- Keine Meldungen Weisse Box Link URL -->
-    <string name="no_meldungen_box_url">"https://canalsalut.gencat.cat/ca/salut-a-z/c/coronavirus-2019-ncov/ciutadania/confinament/"</string>
+    <string name="no_meldungen_box_url">"https://canalsalut.gencat.cat/ca/salut-a-z/c/coronavirus-2019-ncov/ciutadania/represa-de-la-normalitat/mesures-de-proteccio/"</string>
 
     <!-- Informieren Detail: FAQ Titel -->
     <string name="inform_detail_faq1_title">"What is a Covidcode?"</string>
@@ -768,6 +769,12 @@ Infoline Coronavirus
 
     <!-- URL für Häufige Fragen Button -->
     <string name="faq_button_url">"https://web.gencat.cat/ca/coronavirus/preguntes-mes-frequents/"</string>
+
+    <string name="faq_button_url_positive_detected">"https://canalsalut.gencat.cat/ca/salut-a-z/c/coronavirus-2019-ncov/ciutadania/represa-de-la-normalitat/deteccio-de-casos-i-seguiment-de-contactes/"</string>
+
+    <string name="faq_button_url_reports">https://canalsalut.gencat.cat/ca/salut-a-z/c/coronavirus-2019-ncov/ciutadania/</string>
+
+    <string name="how_to_report_positive">https://sites.google.com/s/0B9v9EAhxyYALNFdhS09mZ0ZzWms/p/11J34Io2T3U_x2jHgu5PtlBvs7Ym0DZxf/edit</string>
 
     <!-- Informieren Flow: Titel erster Screen -->
     <string name="inform_code_intro_title">"Important information"</string>

@@ -21,16 +21,16 @@
     <string name="inform_continue_button">"Seguir"</string>
 
 
-    <string name="inform_send_button_title">"Enviar informe anónimo"</string>
+    <string name="inform_send_button_title">"Enviar un informe anónimo"</string>
 
 
     <string name="inform_send_thankyou">"Gracias"</string>
 
 
-    <string name="inform_send_thankyou_text">"Ha informado su prueba positiva de forma anónima a través de la aplicación.  Gracias por ayudar a contener la propagación del coronavirus ".</string>
+    <string name="inform_send_thankyou_text">Has informado de tu resultado positivo de forma anónima a través de la app. Gracias por ayudar a contener la propagación del coronavirus.</string>
 
 
-    <string name="inform_fertig_button_title">"Cerca"</string>
+    <string name="inform_fertig_button_title">"Cierra"</string>
 
 
     <string name="handshakes_title_homescreen">"Encuentros"</string>
@@ -48,7 +48,7 @@
     <string name="push_exposed_text">"Abre la aplicación para leer el mensaje"</string>
 
 
-    <string name="android_button_permission_location">"Localización de permisos"</string>
+    <string name="android_button_permission_location">"Permite la localización"</string>
 
 
     <string name="android_button_ok">"Okay"</string>
@@ -75,13 +75,13 @@
     <string name="NSBluetoothAlwaysUsageDescription">"Los encuentros se reconocerán en segundo plano a través de Bluetooth de baja energía".</string>
 
 
-    <string name="android_foreground_service_notification_text">"Los encuentros se registrarán de forma anónima en su dispositivo".</string>
+    <string name="android_foreground_service_notification_text">"Los encuentros se registrarán de forma anónima en tu dispositivo."</string>
 
 
-    <string name="inform_code_title">"Ingrese el código Covid"</string>
+    <string name="inform_code_title">"Introduce el código Covid"</string>
 
 
-    <string name="inform_code_text">"Ingrese el código Covid que se le envió".</string>
+    <string name="inform_code_text">"Introduce el código Covid que se te ha enviado".</string>
 
 
     <string name="inform_code_no_code">"¿Necesitas ayuda?"</string>
@@ -111,7 +111,7 @@
     <string name="push_deactivated_title">"Mensajes desactivados"</string>
 
 
-    <string name="push_deactivated_text">"Cambie la configuración para recibir información directamente en caso de un informe".</string>
+    <string name="push_deactivated_text">Cambia la configuración para recibir información directamente en caso de un informe.</string>
 
 
     <string name="meldungen_meldung_title">"Posible infección"</string>
@@ -120,7 +120,7 @@
     <string name="meldungen_meldung_text">"Se sospecha una infección".</string>
 
 
-    <string name="tracing_active_title">"Seguimiento activo"</string>
+    <string name="tracing_active_title">"Rastreo activo"</string>
 
 
     <string name="tracing_active_text">"Los encuentros se registrarán de forma anónima".</string>
@@ -129,31 +129,31 @@
     <string name="android_tracing_error_title">"Seguimiento no activo"</string>
 
 
-    <string name="android_foreground_service_notification_errors">"La aplicación actualmente no puede funcionar correctamente"</string>
+    <string name="android_foreground_service_notification_errors">"En estos momentos, la app no puede funcionar correctamente"</string>
 
 
     <string name="android_foreground_service_notification_error_network_sync">"Se produjo un error al cargar los datos"</string>
 
 
-    <string name="android_foreground_service_notification_error_location_permission">"Para que la aplicación use Bluetooth, debe habilitar su ubicación para ser utilizada. La aplicación en sí misma no reconoce su ubicación en ningún momento".</string>
+    <string name="android_foreground_service_notification_error_location_permission">"Para que la aplicación use Bluetooth, debes habilitar la ubicación. La aplicación, por si misma, no reconoce tu ubicación en ningún momento".</string>
 
 
-    <string name="android_foreground_service_notification_error_battery_optimization">"Para que el rastreo funcione con precisión, la aplicación también debe ejecutarse en segundo plano. Esto provocará un aumento menor en el uso de la batería".</string>
+    <string name="android_foreground_service_notification_error_battery_optimization">"Para que el rastreo funcione con precisión, la aplicación también debe ejecutarse en segundo plano. Esto provocará un pequeño aumento en el uso de la batería".</string>
 
 
     <string name="preview_warning_title">"Vista previa de la versión"</string>
 
 
-    <string name="preview_warning_text">"Esta aplicación proporciona una vista previa de cómo funciona el DP- * T. No es un trazador COVIS-19 que funcione".</string>
+    <string name="preview_warning_text">"Esta aplicación proporciona una vista previa de cómo funciona el dp-3t. No es un trazador covid-19 que funcione".</string>
 
 
     <string name="debug_settings_title">"Configuración de depuración"</string>
 
 
-    <string name="debug_state_setting_title">"Sobrescribir estado de la aplicación"</string>
+    <string name="debug_state_setting_title">"Sobrescribir el estado de la aplicación"</string>
 
 
-    <string name="debug_state_setting_text">"Esta configuración sobrescribe el estado visual de la aplicación. La funcionalidad de rastreo no se ve afectada".</string>
+    <string name="debug_state_setting_text">"Este parámetro sobrescribe el estado visual de la aplicación. La funcionalidad de rastreo no se ve afectada".</string>
 
 
     <string name="debug_state_setting_option_none">"No sobrescribir"</string>
@@ -165,19 +165,19 @@
     <string name="debug_state_setting_option_exposed">"El contacto ha dado positivo"</string>
 
 
-    <string name="debug_state_setting_option_infected">"Se informó a sí mismo como positivo"</string>
+    <string name="debug_state_setting_option_infected">"Te has informado como un caso positivo"</string>
 
 
     <string name="debug_sdk_state_title">"Estado del SDK"</string>
 
 
-    <string name="debug_sdk_state_text">"Estado actual del SDK DP-3T"</string>
+    <string name="debug_sdk_state_text">"Estado actual del SDK dp-3t"</string>
 
 
     <string name="debug_sdk_state_last_synced">"Última sincronización"</string>
 
 
-    <string name="debug_sdk_state_self_exposed">"Informó usted mismo"</string>
+    <string name="debug_sdk_state_self_exposed">"Has informado"</string>
 
 
     <string name="debug_sdk_state_contact_exposed">"Contacto informado"</string>
@@ -186,7 +186,7 @@
     <string name="debug_sdk_state_number_handshakes">"Número de apretones de manos"</string>
 
 
-    <string name="debug_sdk_state_boolean_true">"Si"</string>
+    <string name="debug_sdk_state_boolean_true">"Sí"</string>
 
 
     <string name="debug_sdk_state_boolean_false">"No"</string>
@@ -204,16 +204,16 @@
     <string name="whattodo_title_symptoms">"Síntomas de la enfermedad"</string>
 
 
-    <string name="whattodo_subtitle_symptoms">"Qué hacer si ..."</string>
+    <string name="whattodo_subtitle_symptoms">"Qué hacer si..."</string>
 
 
-    <string name="whattodo_title_positivetest">"da positivo"</string>
+    <string name="whattodo_title_positivetest">"das positivo"</string>
 
 
-    <string name="whattodo_subtitle_positivetest">"Qué hacer si ..."</string>
+    <string name="whattodo_subtitle_positivetest">"Qué hacer si..."</string>
 
 
-    <string name="inform_detail_subtitle">"Qué hacer si ..."</string>
+    <string name="inform_detail_subtitle">"Qué hacer si..."</string>
 
 
     <string name="inform_detail_title">"¿Tienes un resultado positivo?"</string>
@@ -225,41 +225,44 @@
     <string name="inform_detail_box_title">"Enviar un informe anónimo"</string>
 
 
-    <string name="inform_detail_box_button">"Ingrese el código Covid"</string>
+    <string name="inform_detail_box_button">"Introduce el código Covid"</string>
 
 
-    <string name="inform_detail_box_text">"Utilice el código Covid que se le envió para informar la prueba de forma anónima en la aplicación".</string>
+    <string name="inform_detail_box_text">"Utiliza el código Covid que se te ha enviado para informar del resultado de forma anónima en la app".</string>
 
 
-    <string name="symptom_detail_subtitle">"¿Qué hago si ..."</string>
+    <string name="symptom_detail_subtitle">"¿Qué hago si..."</string>
 
 
-    <string name="symptom_detail_title">"¿Me siento enfermo?"</string>
+    <string name="symptom_detail_title">"Me encuentro mal"</string>
 
 
-    <string name="symptom_detail_box_subtitle">"En el caso de los síntomas ..."</string>
+    <string name="symptom_detail_box_subtitle">"En caso de tener síntomas"</string>
 
 
-    <string name="symptom_detail_box_title">"Contacte a su médico"</string>
+    <string name="symptom_detail_box_title">"Contacta a tu médico"</string>
 
 
-    <string name="symptom_detail_box_button">"A la comprobación de coronavirus"</string>
+    <string name="symptom_detail_box_button">"¿Tienes síntomas pero no estás seguro? Pincha aquí!"</string>
 
 
-    <string name="symptom_detail_box_text">"Si tiene posibles síntomas de coronavirus, comuníquese con su médico o con el servicio de emergencias médicas".</string>
+    <string name="how_communicate_box_button">"¿Cómo puedo comunicar que he dado positivo de COVID 19?"</string>
 
 
-    <string name="inform_detail_navigation_title">"Probado positivo"</string>
+    <string name="symptom_detail_box_text">"Si tienes posibles síntomas de coronavirus, comunícagte con tu médico o con el servicio de emergencias médicas".</string>
+
+
+    <string name="inform_detail_navigation_title">"Positivo probado"</string>
 
 
     <string name="symptom_detail_navigation_title">"Síntomas"</string>
-    <string name="tracing_turned_off_title">"Seguimiento desactivado"</string>
-    <string name="tracing_turned_off_text">"Active el rastreo para que la aplicación funcione".</string>
+    <string name="tracing_turned_off_title">"Rastreo desactivado"</string>
+    <string name="tracing_turned_off_text">"Activa el rastreo para que la aplicación funcione".</string>
     <string name="bluetooth_turned_off_title">"Bluetooth desactivado"</string>
-    <string name="bluetooth_turned_off_text">"Active Bluetooth en su dispositivo para que funcione el rastreo anónimo".</string>
+    <string name="bluetooth_turned_off_text">"Activa el Bluetooth en su dispositivo para que funcione el rastreo anónimo.".</string>
     <string name="bluetooth_turn_on_button_title">"Activar Bluetooth"</string>
     <string name="bluetooth_permission_error_title">"Uso de Bluetooth rechazado"</string>
-    <string name="bluetooth_permission_error_text">"Habilite el uso de Bluetooth para que funcione el rastreo anónimo".</string>
+    <string name="bluetooth_permission_error_text">"Habilita el Bluetooth para que funcione el rastreo anónimo".</string>
 
 
     <string name="symptom_detail_corona_check_url">"https://canalsalut.gencat.cat/ca/salut-a-z/c/coronavirus-2019-ncov/ciutadania/que-es-coronavirus/simptomes-i-tractament/"</string>
@@ -269,28 +272,28 @@
     <string name="meldungen_no_meldungen_subtitle">"No se han reportado infecciones potenciales"</string>
 
 
-    <string name="no_meldungen_box_title">"Protégete a ti mismo"</string>
+    <string name="no_meldungen_box_title">"Protégete"</string>
 
 
     <string name="no_meldungen_box_subtitle">"¿Qué tengo que hacer?"</string>
 
 
-    <string name="no_meldungen_box_text">"Siga las recomendaciones del gobierno sobre higiene y distanciamiento social".</string>
+    <string name="no_meldungen_box_text">"Sigue las recomendaciones del gobierno sobre higiene y distanciamiento social.".</string>
 
 
-    <string name="meldung_detail_positive_tested_title">"Probado positivo"</string>
+    <string name="meldung_detail_positive_tested_title">"Positivo probado"</string>
 
 
     <string name="meldung_detail_positive_tested_subtitle">"Has dado positivo por el nuevo coronavirus".</string>
 
 
-    <string name="meldung_detail_positive_test_box_subtitle">"¿Que tengo que hacer?"</string>
+    <string name="meldung_detail_positive_test_box_subtitle">"¿Qué tengo que hacer?"</string>
 
 
     <string name="meldung_detail_positive_test_box_title">"Autoaislamiento"</string>
 
 
-    <string name="meldung_detail_positive_test_box_text">"Siga las instrucciones sobre autoaislamiento".</string>
+    <string name="meldung_detail_positive_test_box_text">"Sigue las instrucciones sobre autoaislamiento".</string>
     <string name="tracing_ended_title">"Seguimiento finalizado"</string>
     <string name="tracing_ended_text">"No hay más encuentros registrados"</string>
     <string name="exposed_info_contact_hotline">"Contacta el"</string>
@@ -298,15 +301,15 @@
     <string name="meldung_homescreen_positive_info_line2">"Instrucciones sobre autoaislamiento"</string>
 
 
-    <string name="meldung_detail_exposed_new_meldung">"Nuevo reporte"</string>
+    <string name="meldung_detail_exposed_new_meldung">"Nuevo informe"</string>
 
 
     <string name="meldung_detail_exposed_title">"Infección potencial"</string>
-    <string name="meldung_homescreen_positiv_title">"Probado positivo"</string>
+    <string name="meldung_homescreen_positiv_title">"Positivo probado"</string>
 
 
-    <string name="meldung_detail_exposed_subtitle">"Posible infección sospechada"</string>
-    <string name="meldung_homescreen_positiv_text">"Has dado positivo por el nuevo coronavirus".</string>
+    <string name="meldung_detail_exposed_subtitle">"Se sospecha posible infección"</string>
+    <string name="meldung_homescreen_positiv_text">"Has dado positivo en coronavirus".</string>
 
 
     <string name="reset_onboarding">"Restablecer incorporación"</string>
@@ -321,7 +324,7 @@
     <string name="meldungen_detail_whattodo">"¿Qué tengo que hacer?"</string>
 
 
-    <string name="meldungen_detail_call">"Llámenos"</string>
+    <string name="meldungen_detail_call">"Escribe a: comissio.desconfinament.persones@basetis.com"</string>
 
 
     <string name="meldungen_detail_call_text">"Coronavirus infoline (24 horas al día)"</string>
@@ -333,16 +336,16 @@
     <string name="meldungen_detail_explanation_title">"¡Ten cuidado!"</string>
 
 
-    <string name="meldungen_detail_explanation_text1">"Podrías ser contagioso sin darte cuenta".</string>
+    <string name="meldungen_detail_explanation_text1">"Podrías ser un caso contagioso sin darte cuenta".</string>
 
 
-    <string name="meldungen_detail_explanation_text2">"Proteja a su familia, sus amigos y quienes lo rodean. Evite los contactos hasta 10 días después de una posible infección".</string>
+    <string name="meldungen_detail_explanation_text2">"Protege a tu familia, amistades y a quien te rodea. Evita los contactos hasta 10 días después de una posible infección.".</string>
 
 
     <string name="meldungen_detail_guard_others">"Protege a otras personas"</string>
 
 
-    <string name="meldungen_detail_guard_text">"Si tienes alguna pregunta: Coronavirus Infoline  41 58 387 77 78 "</string>
+    <string name="meldungen_detail_guard_text">"Si tienes alguna duda: comissio.desconfinament.persones@basetis.com"</string>
 
 
     <string name="meldungen_detail_call_again_button">"Llama de nuevo"</string>
@@ -351,16 +354,16 @@
     <string name="meldungen_detail_call_last_call">"Última llamada: {DATE}"</string>
 
 
-    <string name="app_subtitle">"A un paso por delante del virus"</string>
+    <string name="app_subtitle">"Un paso por delante del virus"</string>
 
 
     <string name="onboarding_prinzip_heading">"El objetivo"</string>
 
 
-    <string name="onboarding_prinzip_title">"A un paso por delante del virus"</string>
+    <string name="onboarding_prinzip_title">"Un paso por delante del virus"</string>
 
 
-    <string name="onboarding_prinzip_text1">"Al usar la aplicación dp3t, todos podemos ayudar a contener la propagación del nuevo coronavirus".</string>
+    <string name="onboarding_prinzip_text1">"Al usar la aplicación dp-3t, todos y todas podemos ayudar a contener la propagación del nuevo coronavirus".</string>
 
 
     <string name="onboarding_prinzip_text2">"La aplicación proporciona información sobre infecciones sospechosas. De esta manera, la cadena de infección puede romperse".</string>
@@ -384,10 +387,10 @@
     <string name="onboarding_begegnungen_title">"Reconocimiento de encuentros con Bluetooth"</string>
 
 
-    <string name="onboarding_begegnungen_text1">"La aplicación reconoce automáticamente cuando dos usuarios han estado muy cerca durante cierto tiempo".</string>
+    <string name="onboarding_begegnungen_text1">"La aplicación reconoce automáticamente cuándo dos personas usuarias han estado muy cerca durante cierto tiempo.".</string>
 
 
-    <string name="onboarding_begegnungen_text2">"Utiliza Bluetooth Low Energy (BLE) para hacer esto. No se utilizan datos de GPS".</string>
+    <string name="onboarding_begegnungen_text2">"Se utiliza Bluetooth Low Energy (BLE) para hacer esto. No se utilizan datos de GPS".</string>
 
 
     <string name="onboarding_meldung_heading">"¿Qué hace la aplicación?"</string>
@@ -396,7 +399,7 @@
     <string name="onboarding_meldung_title">"Informe de infección potencial"</string>
 
 
-    <string name="onboarding_meldung_text1">"La aplicación le notifica si se sospecha una posible infección".</string>
+    <string name="onboarding_meldung_text1">"La aplicación te notifica si se sospecha de una posible infección.".</string>
 
 
     <string name="onboarding_meldung_text2">"Al responder adecuadamente, puedes protegerte a ti mismo y a otras personas".</string>
@@ -405,22 +408,22 @@
     <string name="onboarding_bluetooth_title">"Habilitar Bluetooth"</string>
 
 
-    <string name="onboarding_bluetooth_text">"Para usar la aplicación, debe habilitar Bluetooth".</string>
+    <string name="onboarding_bluetooth_text">"Para usar la aplicación, debes habilitar Bluetooth.".</string>
 
 
     <string name="onboarding_bluetooth_button">"Habilitar Bluetooth"</string>
 
 
-    <string name="onboarding_good_to_know">"Bueno saber"</string>
+    <string name="onboarding_good_to_know">"Es bueno saberlo"</string>
 
 
-    <string name="onboarding_bluetooth_gtk_title1">"Permaneces anónimo"</string>
+    <string name="onboarding_bluetooth_gtk_title1">"Permaneces anónimo/a"</string>
 
 
     <string name="onboarding_bluetooth_gtk_text1">"No hay datos personales visibles a través de Bluetooth".</string>
 
 
-    <string name="onboarding_bluetooth_gtk_title2">"Aumento menor en el uso de la batería"</string>
+    <string name="onboarding_bluetooth_gtk_title2">"Pequeño aumento en el uso de la batería"</string>
 
 
     <string name="onboarding_bluetooth_gtk_text2">"La aplicación funciona con la menor cantidad de energía posible. Solo hay un pequeño aumento en el uso de la batería".</string>
@@ -429,7 +432,7 @@
     <string name="onboarding_push_title">"Permitir mensajes"</string>
 
 
-    <string name="onboarding_push_text">"Para recibir notificaciones de la aplicación, debe habilitar los mensajes".</string>
+    <string name="onboarding_push_text">"Para recibir notificaciones de la aplicación, debes habilitar los mensajes.".</string>
 
 
     <string name="onboarding_push_button">"Habilitar mensajes"</string>
@@ -438,10 +441,10 @@
     <string name="onboarding_push_gtk_title1">"Notificado de inmediato"</string>
 
 
-    <string name="onboarding_push_gtk_text1">"En caso de una posible infección, recibirá un mensaje en la pantalla de bloqueo".</string>
+    <string name="onboarding_push_gtk_text1">"En caso de una posible infección, recibirás un mensaje en la pantalla de bloqueo.".</string>
 
 
-    <string name="inform_send_getwell_title">"¡Mejorate pronto!"</string>
+    <string name="inform_send_getwell_title">"¡Mejórate pronto!"</string>
 
 
     <string name="inform_send_getwell_text">"¡Recupérate pronto! Sigue las instrucciones sobre autoaislamiento".</string>
@@ -450,31 +453,31 @@
     <string name="onboarding_go_title">"La aplicación está lista para funcionar"</string>
 
 
-    <string name="onboarding_go_text">"Gracias por ayudar a protegerse y proteger a los demás".</string>
+    <string name="onboarding_go_text">"Gracias por ayudar a protegerte a ti y a las demás personas.".</string>
 
 
-    <string name="onboarding_go_button">"Comienzo"</string>
+    <string name="onboarding_go_button">"Comenzar"</string>
 
 
     <string name="android_onboarding_bt_permission_title">"Habilitar ubicación para Bluetooth"</string>
 
 
-    <string name="android_onboarding_bt_permission_text">"Para que la aplicación funcione y para acceder a Bluetooth, debe habilitar la función de ubicación".</string>
+    <string name="android_onboarding_bt_permission_text">"Para que la aplicación funcione y para acceder a Bluetooth, debes habilitar la función de ubicación.".</string>
 
 
     <string name="android_onboarding_bt_permission_button">"Permitir"</string>
 
 
-    <string name="android_onboarding_bt_permission_goodtoknow">"Bueno saber"</string>
+    <string name="android_onboarding_bt_permission_goodtoknow">"Es bueno saberlo"</string>
 
 
     <string name="android_onboarding_bt_permission_info_1_title">"Tu ubicación sigue siendo secreta"</string>
 
 
-    <string name="android_onboarding_bt_permission_info_1_text">"En los dispositivos Android, habilitar Bluetooth requiere que habilites el intercambio de tu ubicación. Es por eso que la función de ubicación debe estar habilitada incluso si la aplicación no registra tu ubicación en ningún momento".</string>
+    <string name="android_onboarding_bt_permission_info_1_text">"En los dispositivos Android, habilitar Bluetooth requiere que permitas compartir tu ubicación. Es por eso que la función de ubicación debe estar habilitada incluso si la aplicación no registra tu ubicación en ningún momento".</string>
 
 
-    <string name="android_onboarding_bt_permission_info_2_title">"Permaneces anónimo"</string>
+    <string name="android_onboarding_bt_permission_info_2_title">"Permaneces anónimo/a"</string>
 
 
     <string name="android_onboarding_bt_permission_info_2_text">"No hay datos personales visibles a través de Bluetooth".</string>
@@ -495,7 +498,7 @@
     <string name="android_onboarding_battery_permission_info_1_text">"Para que la aplicación funcione, también debe ejecutarse en segundo plano. La optimización de la batería se puede deshabilitar para aplicaciones individuales, de modo que esto sea posible".</string>
 
 
-    <string name="android_onboarding_battery_permission_info_2_title">"Aumento menor en el uso de la batería"</string>
+    <string name="android_onboarding_battery_permission_info_2_title">"Pequeño aumento en el uso de la batería"</string>
 
 
     <string name="android_onboarding_battery_permission_info_2_text">"La aplicación funciona con la menor cantidad de energía posible. Solo hay un pequeño aumento en el uso de la batería".</string>
@@ -510,25 +513,25 @@
     <string name="homescreen_meldung_data_outdated_title">"Sin datos actuales"</string>
 
 
-    <string name="homescreen_meldung_data_outdated_text">"No ha sido posible sincronizar informes durante algún tiempo. Compruebe que su dispositivo esté conectado a Internet".</string>
+    <string name="homescreen_meldung_data_outdated_text">"No ha sido posible sincronizar informes durante algún tiempo. Comprueba que tu dispositivo esté conectado a Internet".</string>
 
 
-    <string name="homescreen_meldung_data_outdated_retry_button">"Procesar de nuevo"</string>
+    <string name="homescreen_meldung_data_outdated_retry_button">"Vuelve a intentarlo"</string>
 
 
     <string name="inform_code_invalid_title">"Código inválido"</string>
 
 
-    <string name="inform_code_invalid_subtitle">"Si tiene alguna pregunta: App-Hotline  41 58 466 07 99 "</string>
+    <string name="inform_code_invalid_subtitle">"Si tienes alguna pregunta: comissio.desconfinament.persones@basetis.com"</string>
 
 
     <string name="date_one_day_ago">"Hace 1 día"</string>
 
 
-    <string name="meldung_detail_new_contact_title">"Nuevo reporte"</string>
+    <string name="meldung_detail_new_contact_title">"Nuevo informe"</string>
 
 
-    <string name="meldung_detail_new_contact_subtitle">"En este día, también fue posible una infección".</string>
+    <string name="meldung_detail_new_contact_subtitle">"En esta fecha, una infección también era posible".</string>
 
 
     <string name="time_inconsistency_title">"Error de tiempo"</string>
@@ -540,37 +543,37 @@
     <string name="begegnungen_restart_error_title">"Reinicio requerido"</string>
 
 
-    <string name="begegnungen_restart_error_text">"Se produjo un error inesperado. Reinicie su dispositivo".</string>
+    <string name="begegnungen_restart_error_text">"Se produjo un error inesperado. Reinicia tu dispositivo".</string>
 
 
     <string name="meldungen_background_error_title">"Actualización de fondo desactivada".</string>
 
 
-    <string name="meldungen_background_error_text">"Cambie la configuración para recibir notificaciones fuera de la aplicación también en caso de un informe".</string>
+    <string name="meldungen_background_error_text">"Cambia la configuración para recibir notificaciones fuera de la aplicación así como en caso de un informe".</string>
 
 
     <string name="meldungen_background_error_button">"Cambiar ajustes"</string>
 
 
-    <string name="force_update_text">"Instale la nueva versión de la aplicación para que el rastreo funcione".</string>
+    <string name="force_update_text">"Instala la nueva versión de la aplicación para que el rastreo funcione".</string>
 
 
     <string name="meldung_in_app_alert_ignore_button">"Ignorar"</string>
 
 
-    <string name="meldung_in_app_alert_accept_button">"A notificaciones"</string>
+    <string name="meldung_in_app_alert_accept_button">"Ir a notificaciones"</string>
 
 
     <string name="meldungen_detail_call_again">"Llama de nuevo"</string>
 
 
-    <string name="network_error">"Por favor revise su conexion a internet"</string>
+    <string name="network_error">"Por favor, revisa tu conexión a Internet."</string>
 
 
-    <string name="unexpected_error_with_retry">"Se produjo un error inesperado. Vuelva a intentarlo".</string>
+    <string name="unexpected_error_with_retry">"Se produjo un error inesperado. Vuelve a intentarlo".</string>
 
 
-    <string name="invalid_response_auth_code">"Debido a un error del sistema, su código de autenticación no se pudo utilizar correctamente. Llame a la línea directa".</string>
+    <string name="invalid_response_auth_code">"Debido a un error del sistema, tu código de autenticación no se pudo utilizar correctamente. Escribe a: comissio.desconfinament.persones@basetis.com".</string>
 
 
     <string name="error_location_permission_title">"Uso de ubicación rechazado"</string>
@@ -618,13 +621,13 @@
     <string name="accessibility_12nd">"Duodécimo"</string>
 
 
-    <string name="accessibility_code_button_disabled_hint">"Ingrese el código completo y luego presione el botón".</string>
+    <string name="accessibility_code_button_disabled_hint">"Introduce el código completo y luego presiona el botón".</string>
 
 
     <string name="error_battery_optimization_title">"Optimización del uso de la batería activada"</string>
 
 
-    <string name="foreground_service_notification_error_location_service">"Habilite la información de ubicación para que la aplicación pueda usar Bluetooth. La aplicación no reconoce su ubicación en ningún momento".</string>
+    <string name="foreground_service_notification_error_location_service">"Habilita la información de ubicación para que la aplicación pueda usar Bluetooth. La aplicación no reconoce tu ubicación en ningún momento".</string>
 
 
     <string name="error_location_services_title">"Ubicación deshabilitada"</string>
@@ -648,7 +651,7 @@
     <string name="meldung_animation_continue_button">"Seguir"</string>
 
 
-    <string name="menu_impressum">"Imprimir"</string>
+    <string name="menu_impressum">"Impresión"</string>
 
 
     <string name="sync_error_title">"Error inesperado"</string>
@@ -657,13 +660,13 @@
     <string name="sync_error_text">"Ha ocurrido un error de sincronización"</string>
 
 
-    <string name="sync_error_button">"Procesar de nuevo"</string>
+    <string name="sync_error_button">"Volver a intentar"</string>
 
 
     <string name="begegnung_detail_faq1_title">"¿Qué es un encuentro?"</string>
 
 
-    <string name="begegnung_detail_faq1_text">"Si los teléfonos inteligentes con la aplicación están cerca por varios minutos, esto se registra en su dispositivo como un encuentro".</string>
+    <string name="begegnung_detail_faq1_text">"Si los smatphones con la aplicación están cerca durante varios minutos, esto queda registrado en tu dispositivo como un encuentro".</string>
 
 
     <string name="begegnung_detail_faq2_title">"¿Están seguros mis datos?"</string>
@@ -675,25 +678,25 @@
     <string name="begegnungen_detail_faq3_title">"¿Bluetooth tiene que estar encendido todo el tiempo?"</string>
 
 
-    <string name="begegnungen_detail_faq3_text">"Para reconocer los encuentros, Bluetooth debe estar encendido en todo momento. Esto causa un pequeño aumento en el uso de la batería".</string>
+    <string name="begegnungen_detail_faq3_text">"Para reconocer los encuentros, el Bluetooth debe mantenerse activado. Esto provoca solo un pequeño aumento del uso de la batería".</string>
 
 
-    <string name="faq_button_title">"Preguntas frecuentes"</string>
+    <string name="faq_button_title">"FAQs"</string>
 
 
     <string name="meldungen_nomeldungen_faq1_title">"¿Qué son los informes?"</string>
 
 
-    <string name="meldungen_nomeldungen_faq1_text">"La aplicación comprueba regularmente si algún encuentro que haya registrado ha dado positivo por el virus. Si es posible que haya sido infectado, recibirá un mensaje en la pantalla de bloqueo".</string>
+    <string name="meldungen_nomeldungen_faq1_text">"La aplicación comprueba regularmente si algún encuentro que haya registrado ha dado positivo por el virus. Si existe la posibilidad que te hayas infectado, recibirás un mensaje en la pantalla de bloqueo.".</string>
 
 
     <string name="meldungen_nomeldungen_faq2_titel">"¿Qué es una infección potencial?"</string>
 
 
-    <string name="meldungen_nomeldungen_faq2_text">"La aplicación no solo comprueba si has tenido encuentros con personas infectadas, sino también cuánto tiempo y qué tan cerca estuvieron. Solo se te notificará si hay suficientes sospechas de que has sido infectado".</string>
+    <string name="meldungen_nomeldungen_faq2_text">"La aplicación no solo comprueba si has tenido encuentros con personas infectadas, sino también cuánto tiempo y cuán cerca habéis estado. Solo recibirás una notificación si hay suficientes sospechas de que te has infectado".</string>
 
 
-    <string name="meldungen_detail_explanation_text3">"Tan pronto como tenga algún síntoma, comuníquese con su médico".</string>
+    <string name="meldungen_detail_explanation_text3">"Tan pronto como tengas algún síntoma, comunícate con tu médico".</string>
 
 
     <string name="meldungen_explanation_link_title">"Instrucciones sobre la cuarentena"</string>
@@ -705,10 +708,10 @@
     <string name="meldungen_meldungen_faq1_title">"¿Tengo que llamar?"</string>
 
 
-    <string name="meldungen_meldungen_faq1_text">"Es importante que llame cada vez que reciba una notificación. Permanecerá en el anonimato. No se registrarán datos personales".</string>
+    <string name="meldungen_meldungen_faq1_text">"Es importante que llames cada vez que recibas una notificación. Permanecerás en el anonimato y no se registrarán tus datos personales".</string>
 
 
-    <string name="meldungen_detail_call_thankyou_title">"Gracias por su cooperación."</string>
+    <string name="meldungen_detail_call_thankyou_title">"Gracias por tu cooperación."</string>
 
 
     <string name="meldungen_detail_call_thankyou_subtitle">"Estás protegiendo a otras personas".</string>
@@ -723,31 +726,31 @@
     <string name="meldungen_detail_no_meldungen_continue">"Seguir"</string>
 
 
-    <string name="meldungen_detail_no_meldungen_hinweis">"Tenga en cuenta"</string>
+    <string name="meldungen_detail_no_meldungen_hinweis">"A tener en cuenta"</string>
 
 
     <string name="no_meldungen_box_link">"De esta manera, nos protegemos"</string>
 
 
-    <string name="no_meldungen_box_url">"https://canalsalut.gencat.cat/ca/salut-a-z/c/coronavirus-2019-ncov/ciutadania/confinament/"</string>
+    <string name="no_meldungen_box_url">"https://canalsalut.gencat.cat/ca/salut-a-z/c/coronavirus-2019-ncov/ciutadania/represa-de-la-normalitat/mesures-de-proteccio/"</string>
 
 
-    <string name="inform_detail_faq1_title">"¿Qué es un Covidcode?"</string>
+    <string name="inform_detail_faq1_title">"¿Qué es un código Covid?"</string>
 
 
-    <string name="inform_detail_faq1_text">"Las personas que dieron positivo para el nuevo coronavirus reciben un código Covid. Esto garantiza que solo los casos confirmados sean notificados a través de la aplicación".</string>
+    <string name="inform_detail_faq1_text">"Las personas que dan positivo en coronavirus reciben un código Covid. Esto garantiza que solo los casos confirmados sean notificados a través de la aplicación.".</string>
 
 
-    <string name="inform_detail_faq2_title">"¿Cómo me mantengo anónimo?"</string>
+    <string name="inform_detail_faq2_title">"¿Cómo puedo mantener el anonimato?"</string>
 
 
-    <string name="inform_detail_faq2_text">"Solo se envían las claves temporales de su aplicación. Sin datos personales. Otras aplicaciones dp3t pueden verificar si han tenido un encuentro con su aplicación en los últimos días".</string>
+    <string name="inform_detail_faq2_text">"Solo se envían las claves temporales de tu aplicación, sin ningún dato personal. Otras aplicaciones dp-3t pueden verificar si han tenido un encuentro con tu aplicación en los últimos días".</string>
 
 
-    <string name="inform_send_endtracing_title">"Seguimiento finalizado"</string>
+    <string name="inform_send_endtracing_title">"Rastreo finalizado"</string>
 
 
-    <string name="inform_send_endtracing_text">"Después de un texto positivo, el seguimiento finaliza automáticamente".</string>
+    <string name="inform_send_endtracing_text">"Tras notificar tu caso postitivo, el rastreo finaliza automáticamente".</string>
 
 
     <string name="infoline_tel_number">"061"</string>
@@ -756,19 +759,28 @@
     <string name="faq_button_url">"https://web.gencat.cat/ca/coronavirus/preguntes-mes-frequents/"</string>
 
 
+    <string name="faq_button_url_positive_detected">"https://canalsalut.gencat.cat/ca/salut-a-z/c/coronavirus-2019-ncov/ciutadania/represa-de-la-normalitat/deteccio-de-casos-i-seguiment-de-contactes/"</string>
+
+
+    <string name="faq_button_url_reports">https://canalsalut.gencat.cat/ca/salut-a-z/c/coronavirus-2019-ncov/ciutadania/</string>
+
+
+    <string name="how_to_report_positive">https://sites.google.com/s/0B9v9EAhxyYALNFdhS09mZ0ZzWms/p/11J34Io2T3U_x2jHgu5PtlBvs7Ym0DZxf/edit</string>
+
+
     <string name="inform_code_intro_title">"Información importante"</string>
 
 
-    <string name="inform_code_intro_text">"Aunque no se envían datos personales relacionados con usted, puede ser que alguien recuerde su encuentro con usted desde la fecha".</string>
+    <string name="inform_code_intro_text">"Aunque no se envía ningún dato personal, puede ser que alguien recuerde el encuentro contigo desde la fecha".</string>
 
 
     <string name="inform_code_intro_button">"Okay"</string>
 
 
-    <string name="symptom_faq1_title">"¿No estás seguro de los síntomas?"</string>
+    <string name="symptom_faq1_title">"¿Tienes dudas sobre los síntomas?"</string>
 
 
-    <string name="symptom_faq1_text">"¿Tiene síntomas pero no está seguro de lo que debe hacer? Responda las preguntas en el Chequeo de coronavirus FOPH para recibir consejos sobre qué hacer".</string>
+    <string name="symptom_faq1_text">"¿Tienes síntomas pero no tienes claro qué hay que hacer? Haz click aquí:"</string>
 
 
     <string name="meldungen_positive_tested_faq1_title">"¿Por qué ha terminado el rastreo?"</string>

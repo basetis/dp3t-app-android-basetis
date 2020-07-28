@@ -116,7 +116,7 @@ public class ReportsFragment extends Fragment {
 		Button faqButton3 = hotlineView.findViewById(R.id.card_encounters_faq_button);
 		Button faqButton4 = infectedView.findViewById(R.id.card_encounters_faq_button);
 
-		faqButton1.setOnClickListener(v -> showFaq());
+		faqButton1.setOnClickListener(v -> showReportsFaq());
 		faqButton2.setOnClickListener(v -> showFaq());
 		faqButton3.setOnClickListener(v -> showFaq());
 		faqButton4.setOnClickListener(v -> showFaq());
@@ -206,6 +206,11 @@ public class ReportsFragment extends Fragment {
 
 	private void showFaq() {
 		Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.faq_button_url)));
+		startActivity(browserIntent);
+	}
+
+	private void showReportsFaq() {
+		Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.faq_button_url_reports)));
 		startActivity(browserIntent);
 	}
 

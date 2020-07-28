@@ -22,8 +22,8 @@ android {
 		applicationId "com.basetis.dp3t"
 		minSdkVersion 23
 		targetSdkVersion 29
-		versionCode 1001
-		versionName "1.0.1"
+		versionCode 1003
+		versionName "1.0.3"
 		resConfigs "en", "ca", "es"
 
 		buildConfigField "long", "BUILD_TIME", System.currentTimeMillis() + "L"
@@ -121,7 +121,7 @@ android {
 dependencies {
 	implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-	def dp3t_sdk_version = '0.2.4-D10'
+	def dp3t_sdk_version = '0.2.4-D11'
 	devImplementation "org.dpppt:dp3t-sdk-android:$dp3t_sdk_version-calibration"
 	envTestImplementation "org.dpppt:dp3t-sdk-android:$dp3t_sdk_version"
 	basetisImplementation "org.dpppt:dp3t-sdk-android:$dp3t_sdk_version"
