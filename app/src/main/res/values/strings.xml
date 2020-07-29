@@ -534,7 +534,7 @@ Infoline Coronavirus
     <string name="inform_code_invalid_title">"Code invalid"</string>
 
     <!-- Fehlermeldung Subtitle ungültiger Code -->
-    <string name="inform_code_invalid_subtitle">"If you have any questions: App-Hotline comissio.desconfinament.persones@basetis.com"</string>
+    <string name="inform_code_invalid_subtitle">"If you have any questions: App-Hotline tracingapp@basetis.com"</string>
 
     <!-- Datum: Vor 1 Tag -->
     <string name="date_one_day_ago">"1 day ago"</string>

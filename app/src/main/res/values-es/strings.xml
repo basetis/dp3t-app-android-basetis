@@ -324,7 +324,7 @@
     <string name="meldungen_detail_whattodo">"¿Qué tengo que hacer?"</string>
 
 
-    <string name="meldungen_detail_call">"Escribe a: comissio.desconfinament.persones@basetis.com"</string>
+    <string name="meldungen_detail_call">"Escribe a: tracingapp@basetis.com"</string>
 
 
     <string name="meldungen_detail_call_text">"Coronavirus infoline (24 horas al día)"</string>
@@ -345,7 +345,7 @@
     <string name="meldungen_detail_guard_others">"Protege a otras personas"</string>
 
 
-    <string name="meldungen_detail_guard_text">"Si tienes alguna duda: comissio.desconfinament.persones@basetis.com"</string>
+    <string name="meldungen_detail_guard_text">"Si tienes alguna duda: tracingapp@basetis.com"</string>
 
 
     <string name="meldungen_detail_call_again_button">"Llama de nuevo"</string>
@@ -522,7 +522,7 @@
     <string name="inform_code_invalid_title">"Código inválido"</string>
 
 
-    <string name="inform_code_invalid_subtitle">"Si tienes alguna pregunta: comissio.desconfinament.persones@basetis.com"</string>
+    <string name="inform_code_invalid_subtitle">"Si tienes alguna pregunta: tracingapp@basetis.com"</string>
 
 
     <string name="date_one_day_ago">"Hace 1 día"</string>
@@ -573,7 +573,7 @@
     <string name="unexpected_error_with_retry">"Se produjo un error inesperado. Vuelve a intentarlo".</string>
 
 
-    <string name="invalid_response_auth_code">"Debido a un error del sistema, tu código de autenticación no se pudo utilizar correctamente. Escribe a: comissio.desconfinament.persones@basetis.com".</string>
+    <string name="invalid_response_auth_code">"Debido a un error del sistema, tu código de autenticación no se pudo utilizar correctamente. Escribe a: tracingapp@basetis.com".</string>
 
 
     <string name="error_location_permission_title">"Uso de ubicación rechazado"</string>
